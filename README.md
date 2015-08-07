@@ -61,6 +61,7 @@
 	G7PlatformRestart.command是重新开启G7Platform服务，
 	G7PlatformStart.command是开启G7Platform的服务，
 	G7PlatformStop.command是关闭G7Platform的服务，
+	G7PlatformShell.command是开启调试对话框的脚本，
 	packages是存放需要安装的包，
 	tools是在shell脚本运行中需要的其他脚本工具
 
