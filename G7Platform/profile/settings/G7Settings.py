@@ -92,3 +92,9 @@ else:
 	dbname = "dg7platform"
 	dbuser = "dg7platform_user"
 	dbpassword = "dg7platform_password"
+
+########################### 其他 #############################
+
+desPassword = "12345678"
+
+
