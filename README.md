@@ -6,9 +6,12 @@
 
 1.简单介绍
 
-	G7Platform是一个利用nginx转发操作系统中部署的基于python-tornado框架和python-django框架以及一个php的服务。
-	其中的原理是在操作系统中开启4个tornado服务的端口，1个django服务的端口以及一个php服务的端口。
-	4个tornado服务的端口是使用python开启tornado4个端口的服务，使用supervisor去管理这4个进程。
+	G7Platform是一个利用nginx转发操作系统中部署的基于python-tornado框架和
+	python-django框架以及一个php的服务。
+	其中的原理是在操作系统中开启4个tornado服务的端口，1个django服务的端口以及
+	一个php服务的端口。
+	4个tornado服务的端口是使用python开启tornado4个端口的服务，
+	使用supervisor去管理这4个进程。
 	1个django服务是django部署在python的uwsgi环境中，而nginx为uwsgi进行转发。
 	1个php服务是php部署在fastcgi环境中，nginx通过fastcgi和php进行发送和接收消息。
 	另外，G7Platform目前使用的数据库是Mysql-5.6。
@@ -20,26 +23,41 @@
 	0.0 根目录 － G7Platform: 项目路径，包含整个项目所有开发所需要的路径。
 
 	1.0 项目主目录 - G7Platform/G7Platform: 项目主目录，包含所有主要业务的代码，
-	其中包含core（核心工具） library（第三方维护的代码） main(主业务) profile(项目公共配置与设置) 
-	sql(数据库sql脚本) test(调试与测试)
+	其中包含core（核心工具）
+	library（第三方维护的代码） 
+	main(主业务) 
+	profile(项目公共配置与设置) 
+	sql(数据库sql脚本) 
+	test(调试与测试)
 
-	1.1 资源目录 - G7Platform/media: 当前由于部署在单机上，所以从客户端或者前端上传的资源都部署在
+	1.1 资源目录 - G7Platform/media: 当前由于部署在单机上，
+	所以从客户端或者前端上传的资源都部署在
 	这个目录下
 
 	1.2 模块测试 - G7Platform/moduletest: 与服务无关的模块代码自测的目录
 
-	1.3 静态资源 - G7Platform/static: 静态资源目录，如css js png
+	1.3 静态资源 - G7Platform/static: 静态资源目录，
+	如css js png
 
 	1.4 模板 - G7Platform/template: 网页模板,json模板等资源
 
-	1.5 工作区 - G7Platform/workspace: 工作区，主要存放log（日志），profile（部署配置），shell（便捷操作脚本）
+	1.5 工作区 - G7Platform/workspace: 工作区，主要存放
+	log（日志），
+	profile（部署配置），
+	shell（便捷操作脚本）
 
-	1.5.1 日志 - G7Platform/workspace/log: 日志，django（存放django运行中的日志报告） 
+	1.5.1 日志 - G7Platform/workspace/log: 日志，
+	django（存放django运行中的日志报告） 
 	supervisor(存放supervisor监听的tornado服务的运行日志报告)
 
-	1.5.2 配置 - G7Platform/workspace/profile: nginx（关于nginx的配置，其中nginx/log是nginx服务的日志报告） php（关于php部署配置） supervisor（关于supervisor部署的配置） uwsgi（django部署uwsgi环境的配置）
+	1.5.2 配置 - G7Platform/workspace/profile:
+	nginx（关于nginx的配置，其中nginx/log是nginx服务的日志报告） 
+	php（关于php部署配置） 
+	supervisor（关于supervisor部署的配置） 
+	uwsgi（django部署uwsgi环境的配置）
 
-	1.5.3 脚本 - G7Platform/workspace/shell: 存放着G7Platform的操作脚本，其中G7PlatformInitial.command是自动在mac操作系统上部署环境，G7PlatformRestart.command是重新开启G7Platform服务，G7PlatformStart.command是开启G7Platform的服务，
+	1.5.3 脚本 - G7Platform/workspace/shell: 存放着G7Platform的操作脚本，
+	其中G7PlatformInitial.command是自动在mac操作系统上部署环境，G7PlatformRestart.command是重新开启G7Platform服务，G7PlatformStart.command是开启G7Platform的服务，
 	G7PlatformStop.command是关闭G7Platform的服务，packages是存放需要安装的包，
 	tools是在shell脚本运行中需要的其他脚本工具
 
