@@ -1,0 +1,6 @@
+G7Platform Log At 2015-07-21 11:13:21.119443: db_field:Account.G7Group.permissions
+G7Platform Log At 2015-07-21 11:13:21.132114: initial:<class 'Account.models.G7Group'>,*args:(),kwargs:{'instance': <G7Group: 1.iOS研发部>}
+G7Platform Log At 2015-07-21 11:18:09.904356: db_field:Account.G7Group.permissions
+G7Platform Log At 2015-07-21 11:18:09.910693: initial:<class 'Account.models.G7Group'>,*args:(),kwargs:{'instance': <G7Group: 1.iOS研发部>}
+G7Platform Log At 2015-07-21 11:33:32.564149: db_field:Account.G7Group.permissions
+G7Platform Log At 2015-07-21 11:33:32.568927: initial:<class 'Account.models.G7Group'>,*args:(),kwargs:{'instance': <G7Group: 1.iOS研发部>}
