@@ -53,7 +53,7 @@ class G7ReleaseServer(G7Server):
     def supervisorProgramDict(self,port):
 
         return {
-            "command":"python3 ".format(project_path=G7Profile().project_path,django_path=G7Profile().django_path)+path.join(G7Profile().subproject_path,"main/site/site.py")+" --port="+str(port)+" --log_file_prefix="+G7Profile().tornado_log_path,
+            "command":"python3 ".format(project_path=G7Profile().project_path,django_path=G7Profile().django_path)+path.join(G7Profile().subproject_path,"main/main.py")+" --port="+str(port)+" --log_file_prefix="+G7Profile().tornado_log_path,
             "directory":G7Profile().project_name,
             "user":"root",
             "autorestart":"true",

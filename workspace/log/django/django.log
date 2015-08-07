@@ -1,514 +1,86 @@
-Fri Jul 10 15:49:34 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 15:49:34 2015] ***
-Fri Jul 10 15:49:34 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 15:49:34 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 15:49:34 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 15:49:34 2015 - machine: x86_64
-Fri Jul 10 15:49:34 2015 - clock source: unix
-Fri Jul 10 15:49:34 2015 - pcre jit disabled
-Fri Jul 10 15:49:34 2015 - detected number of CPU cores: 8
-Fri Jul 10 15:49:34 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 15:49:34 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 15:49:34 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 15:49:34 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 15:49:34 2015 - your processes number limit is 709
-Fri Jul 10 15:49:34 2015 - limiting address space of processes...
-Fri Jul 10 15:49:34 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 15:49:34 2015 - your memory page size is 4096 bytes
-Fri Jul 10 15:49:34 2015 - detected max file descriptor number: 256
-Fri Jul 10 15:49:34 2015 - lock engine: OSX spinlocks
-Fri Jul 10 15:49:34 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 15:49:34 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 15:49:34 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 15:49:34 2015 - Python main interpreter initialized at 0x7fac5ac0ceb0
-Fri Jul 10 15:49:34 2015 - python threads support enabled
-Fri Jul 10 15:49:34 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 15:49:34 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 15:49:34 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 15:49:34 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 15:49:34 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 15:49:34 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 15:49:34 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 15:49:34 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 15:49:34 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fac5ac0ceb0 pid: 10536 (default app)
-Fri Jul 10 15:49:34 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 15:49:34 2015 - spawned uWSGI master process (pid: 10536)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 1 (pid: 10542, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 2 (pid: 10543, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 3 (pid: 10544, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 4 (pid: 10545, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 5 (pid: 10546, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 6 (pid: 10547, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 7 (pid: 10548, cores: 1)
-Fri Jul 10 15:49:34 2015 - spawned uWSGI worker 8 (pid: 10549, cores: 1)
-Fri Jul 10 15:52:15 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 15:52:15 2015] ***
-Fri Jul 10 15:52:15 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 15:52:15 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 15:52:15 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 15:52:15 2015 - machine: x86_64
-Fri Jul 10 15:52:15 2015 - clock source: unix
-Fri Jul 10 15:52:15 2015 - pcre jit disabled
-Fri Jul 10 15:52:15 2015 - detected number of CPU cores: 8
-Fri Jul 10 15:52:15 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 15:52:15 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 15:52:15 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 15:52:15 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 15:52:15 2015 - your processes number limit is 709
-Fri Jul 10 15:52:15 2015 - limiting address space of processes...
-Fri Jul 10 15:52:15 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 15:52:15 2015 - your memory page size is 4096 bytes
-Fri Jul 10 15:52:15 2015 - detected max file descriptor number: 256
-Fri Jul 10 15:52:15 2015 - lock engine: OSX spinlocks
-Fri Jul 10 15:52:15 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 15:52:15 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 15:52:15 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 15:52:15 2015 - Python main interpreter initialized at 0x7fb70340cf60
-Fri Jul 10 15:52:15 2015 - python threads support enabled
-Fri Jul 10 15:52:15 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 15:52:15 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 15:52:15 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 15:52:15 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 15:52:15 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 15:52:15 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 15:52:15 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 15:52:15 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 15:52:15 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fb70340cf60 pid: 10683 (default app)
-Fri Jul 10 15:52:15 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 15:52:15 2015 - spawned uWSGI master process (pid: 10683)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 1 (pid: 10689, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 2 (pid: 10690, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 3 (pid: 10691, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 4 (pid: 10692, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 5 (pid: 10693, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 6 (pid: 10694, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 7 (pid: 10695, cores: 1)
-Fri Jul 10 15:52:15 2015 - spawned uWSGI worker 8 (pid: 10696, cores: 1)
-Fri Jul 10 16:00:35 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 16:00:35 2015] ***
-Fri Jul 10 16:00:35 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 16:00:35 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 16:00:35 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 16:00:35 2015 - machine: x86_64
-Fri Jul 10 16:00:35 2015 - clock source: unix
-Fri Jul 10 16:00:35 2015 - pcre jit disabled
-Fri Jul 10 16:00:35 2015 - detected number of CPU cores: 8
-Fri Jul 10 16:00:35 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 16:00:35 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 16:00:35 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 16:00:35 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 16:00:35 2015 - your processes number limit is 709
-Fri Jul 10 16:00:35 2015 - limiting address space of processes...
-Fri Jul 10 16:00:35 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 16:00:35 2015 - your memory page size is 4096 bytes
-Fri Jul 10 16:00:35 2015 - detected max file descriptor number: 256
-Fri Jul 10 16:00:35 2015 - lock engine: OSX spinlocks
-Fri Jul 10 16:00:35 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 16:00:35 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 16:00:35 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 16:00:35 2015 - Python main interpreter initialized at 0x7fb6f2600880
-Fri Jul 10 16:00:35 2015 - python threads support enabled
-Fri Jul 10 16:00:35 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 16:00:35 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 16:00:35 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 16:00:35 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 16:00:35 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 16:00:35 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 16:00:35 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 16:00:35 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 16:00:36 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fb6f2600880 pid: 10876 (default app)
-Fri Jul 10 16:00:36 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 16:00:36 2015 - spawned uWSGI master process (pid: 10876)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 1 (pid: 10882, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 2 (pid: 10883, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 3 (pid: 10884, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 4 (pid: 10885, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 5 (pid: 10886, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 6 (pid: 10887, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 7 (pid: 10888, cores: 1)
-Fri Jul 10 16:00:36 2015 - spawned uWSGI worker 8 (pid: 10889, cores: 1)
-Fri Jul 10 16:12:52 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 16:12:52 2015] ***
-Fri Jul 10 16:12:52 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 16:12:52 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 16:12:52 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 16:12:52 2015 - machine: x86_64
-Fri Jul 10 16:12:52 2015 - clock source: unix
-Fri Jul 10 16:12:52 2015 - pcre jit disabled
-Fri Jul 10 16:12:52 2015 - detected number of CPU cores: 8
-Fri Jul 10 16:12:52 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 16:12:52 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 16:12:52 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 16:12:52 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 16:12:52 2015 - your processes number limit is 709
-Fri Jul 10 16:12:52 2015 - limiting address space of processes...
-Fri Jul 10 16:12:52 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 16:12:52 2015 - your memory page size is 4096 bytes
-Fri Jul 10 16:12:52 2015 - detected max file descriptor number: 256
-Fri Jul 10 16:12:52 2015 - lock engine: OSX spinlocks
-Fri Jul 10 16:12:52 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 16:12:52 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 16:12:52 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 16:12:52 2015 - Python main interpreter initialized at 0x7fa8d040d2e0
-Fri Jul 10 16:12:52 2015 - python threads support enabled
-Fri Jul 10 16:12:52 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 16:12:52 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 16:12:52 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 16:12:52 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 16:12:52 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 16:12:52 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 16:12:52 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 16:12:52 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 16:12:52 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa8d040d2e0 pid: 11051 (default app)
-Fri Jul 10 16:12:52 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 16:12:52 2015 - spawned uWSGI master process (pid: 11051)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 1 (pid: 11057, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 2 (pid: 11058, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 3 (pid: 11059, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 4 (pid: 11060, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 5 (pid: 11061, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 6 (pid: 11062, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 7 (pid: 11063, cores: 1)
-Fri Jul 10 16:12:52 2015 - spawned uWSGI worker 8 (pid: 11064, cores: 1)
-{address space usage: 2584162304 bytes/2464MB} {rss usage: 16621568 bytes/15MB} [pid: 11064|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 869 bytes} [Fri Jul 10 18:15:10 2015] GET /admin/ => generated 0 bytes in 68 msecs (HTTP/1.1 302) 8 headers in 402 bytes (1 switches on core 0)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 21446656 bytes/20MB} [pid: 11064|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 851 bytes} [Fri Jul 10 18:15:10 2015] GET /admin/login/?next=/admin/ => generated 1917 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2591764480 bytes/2471MB} {rss usage: 18145280 bytes/17MB} [pid: 11062|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 1080 bytes} [Fri Jul 10 18:15:11 2015] POST /admin/login/?next=/admin/ => generated 0 bytes in 106 msecs (HTTP/1.1 302) 9 headers in 505 bytes (2 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22241280 bytes/21MB} [pid: 11064|app: 0|req: 3/4] 127.0.0.1 () {42 vars in 903 bytes} [Fri Jul 10 18:15:11 2015] GET /admin/ => generated 7180 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 22839296 bytes/21MB} [pid: 11062|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 883 bytes} [Fri Jul 10 18:15:13 2015] GET /admin/Account/g7user/ => generated 15812 bytes in 73 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2583113728 bytes/2463MB} {rss usage: 17047552 bytes/16MB} [pid: 11061|app: 0|req: 1/6] 127.0.0.1 () {40 vars in 811 bytes} [Fri Jul 10 18:15:13 2015] GET /admin/jsi18n/ => generated 6776 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29310976 bytes/27MB} [pid: 11062|app: 0|req: 3/7] 127.0.0.1 () {40 vars in 902 bytes} [Fri Jul 10 18:15:14 2015] GET /admin/Account/g7user/3/ => generated 13411 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22315008 bytes/21MB} [pid: 11064|app: 0|req: 4/8] 127.0.0.1 () {40 vars in 813 bytes} [Fri Jul 10 18:15:14 2015] GET /admin/jsi18n/ => generated 6776 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 21925888 bytes/20MB} [pid: 11063|app: 0|req: 1/9] 127.0.0.1 () {40 vars in 883 bytes} [Fri Jul 10 18:15:14 2015] GET /admin/Account/g7user/ => generated 15812 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 29159424 bytes/27MB} [pid: 11064|app: 0|req: 5/10] 127.0.0.1 () {40 vars in 902 bytes} [Fri Jul 10 18:15:15 2015] GET /admin/Account/g7user/5/ => generated 13485 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2583113728 bytes/2463MB} {rss usage: 17174528 bytes/16MB} [pid: 11061|app: 0|req: 2/11] 127.0.0.1 () {40 vars in 813 bytes} [Fri Jul 10 18:15:16 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29462528 bytes/28MB} [pid: 11062|app: 0|req: 4/12] 127.0.0.1 () {40 vars in 870 bytes} [Fri Jul 10 18:29:05 2015] GET /admin/ => generated 7180 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
-Fri Jul 10 18:33:50 2015 - ...brutally killing workers...
-Fri Jul 10 18:33:51 2015 - worker 8 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 7 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 6 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 5 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 4 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 3 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 2 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - worker 1 buried after 1 seconds
-Fri Jul 10 18:33:51 2015 - binary reloading uWSGI...
-Fri Jul 10 18:33:51 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 18:33:51 2015 - closing all non-uwsgi socket fds > 2 (max_fd = 256)...
-Fri Jul 10 18:33:51 2015 - found fd 3 mapped to socket 0 (127.0.0.1:8882)
-Fri Jul 10 18:33:51 2015 - running /usr/local/bin/uwsgi
-Fri Jul 10 20:28:12 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 20:28:12 2015] ***
-Fri Jul 10 20:28:12 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 20:28:12 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 20:28:12 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 20:28:12 2015 - machine: x86_64
-Fri Jul 10 20:28:12 2015 - clock source: unix
-Fri Jul 10 20:28:12 2015 - pcre jit disabled
-Fri Jul 10 20:28:12 2015 - detected number of CPU cores: 8
-Fri Jul 10 20:28:12 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 20:28:12 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 20:28:12 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 20:28:12 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 20:28:12 2015 - your processes number limit is 709
-Fri Jul 10 20:28:12 2015 - limiting address space of processes...
-Fri Jul 10 20:28:12 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 20:28:12 2015 - your memory page size is 4096 bytes
-Fri Jul 10 20:28:12 2015 - detected max file descriptor number: 256
-Fri Jul 10 20:28:12 2015 - lock engine: OSX spinlocks
-Fri Jul 10 20:28:12 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 20:28:12 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 20:28:12 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 20:28:12 2015 - Python main interpreter initialized at 0x7fcec2c09ad0
-Fri Jul 10 20:28:12 2015 - python threads support enabled
-Fri Jul 10 20:28:12 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 20:28:12 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 20:28:12 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 20:28:12 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 20:28:12 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 20:28:12 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 20:28:12 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 20:28:12 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 20:28:13 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fcec2c09ad0 pid: 925 (default app)
-Fri Jul 10 20:28:13 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 20:28:13 2015 - spawned uWSGI master process (pid: 925)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 1 (pid: 931, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 2 (pid: 932, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 3 (pid: 933, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 4 (pid: 934, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 5 (pid: 935, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 6 (pid: 936, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 7 (pid: 937, cores: 1)
-Fri Jul 10 20:28:13 2015 - spawned uWSGI worker 8 (pid: 938, cores: 1)
-{address space usage: 2592026624 bytes/2471MB} {rss usage: 20971520 bytes/20MB} [pid: 937|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 869 bytes} [Fri Jul 10 20:50:30 2015] GET /admin/ => generated 7180 bytes in 109 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-Fri Jul 10 20:56:54 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 10 20:56:54 2015] ***
-Fri Jul 10 20:56:54 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 10 20:56:54 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 10 20:56:54 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 10 20:56:54 2015 - machine: x86_64
-Fri Jul 10 20:56:54 2015 - clock source: unix
-Fri Jul 10 20:56:54 2015 - pcre jit disabled
-Fri Jul 10 20:56:54 2015 - detected number of CPU cores: 8
-Fri Jul 10 20:56:54 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 10 20:56:54 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 10 20:56:54 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 10 20:56:54 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 10 20:56:54 2015 - your processes number limit is 709
-Fri Jul 10 20:56:54 2015 - limiting address space of processes...
-Fri Jul 10 20:56:54 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 10 20:56:54 2015 - your memory page size is 4096 bytes
-Fri Jul 10 20:56:54 2015 - detected max file descriptor number: 256
-Fri Jul 10 20:56:54 2015 - lock engine: OSX spinlocks
-Fri Jul 10 20:56:54 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 10 20:56:54 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 10 20:56:54 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 10 20:56:55 2015 - Python main interpreter initialized at 0x7fca7a600a20
-Fri Jul 10 20:56:55 2015 - python threads support enabled
-Fri Jul 10 20:56:55 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 10 20:56:55 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 10 20:56:55 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 10 20:56:55 2015 - *** Operational MODE: preforking ***
-Fri Jul 10 20:56:55 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 10 20:56:55 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 10 20:56:55 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 10 20:56:55 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 10 20:56:55 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fca7a600a20 pid: 2076 (default app)
-Fri Jul 10 20:56:55 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 10 20:56:55 2015 - spawned uWSGI master process (pid: 2076)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 1 (pid: 2082, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 2 (pid: 2083, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 3 (pid: 2084, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 4 (pid: 2085, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 5 (pid: 2086, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 6 (pid: 2087, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 7 (pid: 2088, cores: 1)
-Fri Jul 10 20:56:55 2015 - spawned uWSGI worker 8 (pid: 2089, cores: 1)
-{address space usage: 2582851584 bytes/2463MB} {rss usage: 12472320 bytes/11MB} [pid: 2087|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 938 bytes} [Fri Jul 10 20:57:27 2015] GET /admin/List/listmodel/ => generated 4106 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
-{address space usage: 2582851584 bytes/2463MB} {rss usage: 12505088 bytes/11MB} [pid: 2088|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 883 bytes} [Fri Jul 10 20:57:30 2015] GET /admin/List/listmodel/ => generated 4106 bytes in 23 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
-{address space usage: 2582851584 bytes/2463MB} {rss usage: 12648448 bytes/12MB} [pid: 2087|app: 0|req: 2/3] 127.0.0.1 () {40 vars in 887 bytes} [Fri Jul 10 20:57:33 2015] GET /admin/Index/indexmodel/ => generated 4112 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
-{address space usage: 2583113728 bytes/2463MB} {rss usage: 16236544 bytes/15MB} [pid: 2089|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 944 bytes} [Fri Jul 10 20:57:35 2015] GET /admin/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 8 headers in 402 bytes (1 switches on core 0)
-{address space usage: 2593075200 bytes/2472MB} {rss usage: 21434368 bytes/20MB} [pid: 2089|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 926 bytes} [Fri Jul 10 20:57:35 2015] GET /admin/login/?next=/admin/ => generated 1917 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2583375872 bytes/2463MB} {rss usage: 20578304 bytes/19MB} [pid: 2087|app: 0|req: 3/6] 127.0.0.1 () {48 vars in 1080 bytes} [Fri Jul 10 20:57:36 2015] POST /admin/login/?next=/admin/ => generated 0 bytes in 94 msecs (HTTP/1.1 302) 9 headers in 505 bytes (1 switches on core 0)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 21164032 bytes/20MB} [pid: 2088|app: 0|req: 2/7] 127.0.0.1 () {42 vars in 903 bytes} [Fri Jul 10 20:57:36 2015] GET /admin/ => generated 7180 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-Mon Jul 20 14:25:22 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Mon Jul 20 14:25:22 2015] ***
-Mon Jul 20 14:25:22 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Mon Jul 20 14:25:22 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Mon Jul 20 14:25:22 2015 - nodename: yuyangdeMacBook-Pro.local
-Mon Jul 20 14:25:22 2015 - machine: x86_64
-Mon Jul 20 14:25:22 2015 - clock source: unix
-Mon Jul 20 14:25:22 2015 - pcre jit disabled
-Mon Jul 20 14:25:22 2015 - detected number of CPU cores: 8
-Mon Jul 20 14:25:22 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Mon Jul 20 14:25:22 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Mon Jul 20 14:25:22 2015 - detected binary path: /usr/local/bin/uwsgi
-Mon Jul 20 14:25:22 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Mon Jul 20 14:25:22 2015 - your processes number limit is 709
-Mon Jul 20 14:25:22 2015 - limiting address space of processes...
-Mon Jul 20 14:25:22 2015 - your process address space limit is 314572800 bytes (300 MB)
-Mon Jul 20 14:25:22 2015 - your memory page size is 4096 bytes
-Mon Jul 20 14:25:22 2015 - detected max file descriptor number: 2560
-Mon Jul 20 14:25:22 2015 - lock engine: OSX spinlocks
-Mon Jul 20 14:25:22 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Mon Jul 20 14:25:22 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Mon Jul 20 14:25:22 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Mon Jul 20 14:25:22 2015 - Python main interpreter initialized at 0x7f926be008a0
-Mon Jul 20 14:25:22 2015 - python threads support enabled
-Mon Jul 20 14:25:22 2015 - your server socket listen backlog is limited to 80 connections
-Mon Jul 20 14:25:22 2015 - your mercy for graceful operations on workers is 60 seconds
-Mon Jul 20 14:25:22 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Mon Jul 20 14:25:22 2015 - *** Operational MODE: preforking ***
-Mon Jul 20 14:25:22 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Mon Jul 20 14:25:22 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Mon Jul 20 14:25:22 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Mon Jul 20 14:25:22 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Mon Jul 20 14:25:23 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f926be008a0 pid: 9235 (default app)
-Mon Jul 20 14:25:23 2015 - *** uWSGI is running in multiple interpreter mode ***
-Mon Jul 20 14:25:23 2015 - spawned uWSGI master process (pid: 9235)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 1 (pid: 9241, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 2 (pid: 9242, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 3 (pid: 9243, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 4 (pid: 9244, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 5 (pid: 9245, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 6 (pid: 9246, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 7 (pid: 9247, cores: 1)
-Mon Jul 20 14:25:23 2015 - spawned uWSGI worker 8 (pid: 9248, cores: 1)
-{address space usage: 2592550912 bytes/2472MB} {rss usage: 16396288 bytes/15MB} [pid: 9248|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 869 bytes} [Mon Jul 20 14:25:28 2015] GET /admin/ => generated 0 bytes in 63 msecs (HTTP/1.1 302) 8 headers in 402 bytes (1 switches on core 0)
-{address space usage: 2593075200 bytes/2472MB} {rss usage: 21450752 bytes/20MB} [pid: 9248|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 851 bytes} [Mon Jul 20 14:25:28 2015] GET /admin/login/?next=/admin/ => generated 1917 bytes in 44 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2584424448 bytes/2464MB} {rss usage: 18284544 bytes/17MB} [pid: 9245|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 1080 bytes} [Mon Jul 20 14:25:29 2015] POST /admin/login/?next=/admin/ => generated 0 bytes in 118 msecs (HTTP/1.1 302) 9 headers in 505 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 22204416 bytes/21MB} [pid: 9248|app: 0|req: 3/4] 127.0.0.1 () {42 vars in 903 bytes} [Mon Jul 20 14:25:29 2015] GET /admin/ => generated 7180 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28856320 bytes/27MB} [pid: 9248|app: 0|req: 4/5] 127.0.0.1 () {40 vars in 897 bytes} [Mon Jul 20 14:25:31 2015] GET /admin/Application/g7project/ => generated 10720 bytes in 77 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2592550912 bytes/2472MB} {rss usage: 17039360 bytes/16MB} [pid: 9247|app: 0|req: 1/6] 127.0.0.1 () {40 vars in 818 bytes} [Mon Jul 20 14:25:31 2015] GET /admin/jsi18n/ => generated 6776 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22863872 bytes/21MB} [pid: 9244|app: 0|req: 1/7] 127.0.0.1 () {40 vars in 925 bytes} [Mon Jul 20 14:26:37 2015] GET /admin/Application/g7project/24/ => generated 12781 bytes in 149 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28901376 bytes/27MB} [pid: 9248|app: 0|req: 5/8] 127.0.0.1 () {40 vars in 821 bytes} [Mon Jul 20 14:26:37 2015] GET /admin/jsi18n/ => generated 6776 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28938240 bytes/27MB} [pid: 9248|app: 0|req: 6/9] 127.0.0.1 () {40 vars in 902 bytes} [Mon Jul 20 14:29:49 2015] GET /admin/Application/ => generated 2910 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29097984 bytes/27MB} [pid: 9248|app: 0|req: 7/10] 127.0.0.1 () {40 vars in 917 bytes} [Mon Jul 20 14:29:50 2015] GET /admin/Application/g7application/ => generated 10018 bytes in 55 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29102080 bytes/27MB} [pid: 9248|app: 0|req: 8/11] 127.0.0.1 () {40 vars in 822 bytes} [Mon Jul 20 14:29:50 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29421568 bytes/28MB} [pid: 9248|app: 0|req: 9/12] 127.0.0.1 () {40 vars in 935 bytes} [Mon Jul 20 14:29:51 2015] GET /admin/Application/g7application/1/ => generated 16003 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29442048 bytes/28MB} [pid: 9248|app: 0|req: 10/13] 127.0.0.1 () {40 vars in 824 bytes} [Mon Jul 20 14:29:52 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29630464 bytes/28MB} [pid: 9248|app: 0|req: 11/14] 127.0.0.1 () {42 vars in 988 bytes} [Mon Jul 20 14:30:20 2015] GET /admin/Application/g7application/ => generated 10018 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29667328 bytes/28MB} [pid: 9248|app: 0|req: 12/15] 127.0.0.1 () {40 vars in 822 bytes} [Mon Jul 20 14:30:20 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22933504 bytes/21MB} [pid: 9246|app: 0|req: 1/16] 127.0.0.1 () {42 vars in 990 bytes} [Mon Jul 20 14:30:22 2015] GET /admin/Application/g7application/1/ => generated 16003 bytes in 134 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29671424 bytes/28MB} [pid: 9248|app: 0|req: 13/17] 127.0.0.1 () {40 vars in 824 bytes} [Mon Jul 20 14:30:22 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29704192 bytes/28MB} [pid: 9248|app: 0|req: 14/18] 127.0.0.1 () {42 vars in 960 bytes} [Mon Jul 20 14:30:24 2015] GET /admin/Application/ => generated 2910 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 22138880 bytes/21MB} [pid: 9247|app: 0|req: 2/19] 127.0.0.1 () {42 vars in 964 bytes} [Mon Jul 20 14:30:25 2015] GET /admin/Application/g7project/ => generated 10720 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 22147072 bytes/21MB} [pid: 9247|app: 0|req: 3/20] 127.0.0.1 () {40 vars in 818 bytes} [Mon Jul 20 14:30:25 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 29818880 bytes/28MB} [pid: 9248|app: 0|req: 15/21] 127.0.0.1 () {42 vars in 980 bytes} [Mon Jul 20 14:46:03 2015] GET /admin/Application/g7project/24/ => generated 12781 bytes in 67 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 22159360 bytes/21MB} [pid: 9247|app: 0|req: 4/22] 127.0.0.1 () {40 vars in 821 bytes} [Mon Jul 20 14:46:03 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-Mon Jul 20 16:25:34 2015 - ...brutally killing workers...
-Mon Jul 20 16:25:35 2015 - worker 8 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 7 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 6 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 5 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 4 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 3 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 2 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - worker 1 buried after 1 seconds
-Mon Jul 20 16:25:35 2015 - binary reloading uWSGI...
-Mon Jul 20 16:25:35 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Mon Jul 20 16:25:35 2015 - closing all non-uwsgi socket fds > 2 (max_fd = 2560)...
-Mon Jul 20 16:25:35 2015 - found fd 3 mapped to socket 0 (127.0.0.1:8882)
-Mon Jul 20 16:25:35 2015 - running /usr/local/bin/uwsgi
-Tue Jul 21 11:13:09 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Tue Jul 21 11:13:09 2015] ***
-Tue Jul 21 11:13:09 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Tue Jul 21 11:13:09 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Tue Jul 21 11:13:09 2015 - nodename: yuyangdeMacBook-Pro.local
-Tue Jul 21 11:13:09 2015 - machine: x86_64
-Tue Jul 21 11:13:09 2015 - clock source: unix
-Tue Jul 21 11:13:09 2015 - pcre jit disabled
-Tue Jul 21 11:13:09 2015 - detected number of CPU cores: 8
-Tue Jul 21 11:13:09 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Tue Jul 21 11:13:09 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Tue Jul 21 11:13:09 2015 - detected binary path: /usr/local/bin/uwsgi
-Tue Jul 21 11:13:09 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Tue Jul 21 11:13:09 2015 - your processes number limit is 709
-Tue Jul 21 11:13:09 2015 - limiting address space of processes...
-Tue Jul 21 11:13:09 2015 - your process address space limit is 314572800 bytes (300 MB)
-Tue Jul 21 11:13:09 2015 - your memory page size is 4096 bytes
-Tue Jul 21 11:13:09 2015 - detected max file descriptor number: 2560
-Tue Jul 21 11:13:09 2015 - lock engine: OSX spinlocks
-Tue Jul 21 11:13:09 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Tue Jul 21 11:13:09 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Tue Jul 21 11:13:09 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Tue Jul 21 11:13:09 2015 - Python main interpreter initialized at 0x7f9f22c0b360
-Tue Jul 21 11:13:09 2015 - python threads support enabled
-Tue Jul 21 11:13:09 2015 - your server socket listen backlog is limited to 80 connections
-Tue Jul 21 11:13:09 2015 - your mercy for graceful operations on workers is 60 seconds
-Tue Jul 21 11:13:09 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Tue Jul 21 11:13:09 2015 - *** Operational MODE: preforking ***
-Tue Jul 21 11:13:09 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Tue Jul 21 11:13:09 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Tue Jul 21 11:13:09 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Tue Jul 21 11:13:09 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Tue Jul 21 11:13:09 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9f22c0b360 pid: 12358 (default app)
-Tue Jul 21 11:13:09 2015 - *** uWSGI is running in multiple interpreter mode ***
-Tue Jul 21 11:13:09 2015 - spawned uWSGI master process (pid: 12358)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 1 (pid: 12364, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 2 (pid: 12365, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 3 (pid: 12366, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 4 (pid: 12367, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 5 (pid: 12368, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 6 (pid: 12369, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 7 (pid: 12370, cores: 1)
-Tue Jul 21 11:13:09 2015 - spawned uWSGI worker 8 (pid: 12371, cores: 1)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 21016576 bytes/20MB} [pid: 12368|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 869 bytes} [Tue Jul 21 11:13:15 2015] GET /admin/ => generated 7180 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2575511552 bytes/2456MB} {rss usage: 21770240 bytes/20MB} [pid: 12370|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 885 bytes} [Tue Jul 21 11:13:18 2015] GET /admin/Account/g7group/ => generated 5894 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2575773696 bytes/2456MB} {rss usage: 17092608 bytes/16MB} [pid: 12371|app: 0|req: 1/3] 127.0.0.1 () {40 vars in 812 bytes} [Tue Jul 21 11:13:18 2015] GET /admin/jsi18n/ => generated 6776 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2576560128 bytes/2457MB} {rss usage: 22941696 bytes/21MB} [pid: 12371|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 905 bytes} [Tue Jul 21 11:13:21 2015] GET /admin/Account/g7group/1/ => generated 12011 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2575511552 bytes/2456MB} {rss usage: 21856256 bytes/20MB} [pid: 12370|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 814 bytes} [Tue Jul 21 11:13:21 2015] GET /admin/jsi18n/ => generated 6776 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 27877376 bytes/26MB} [pid: 12371|app: 0|req: 3/6] 127.0.0.1 () {42 vars in 960 bytes} [Tue Jul 21 11:18:09 2015] GET /admin/Account/g7group/1/ => generated 12011 bytes in 139 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 13803520 bytes/13MB} [pid: 12370|app: 0|req: 3/7] 127.0.0.1 () {40 vars in 814 bytes} [Tue Jul 21 11:18:10 2015] GET /admin/jsi18n/ => generated 6776 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2576297984 bytes/2456MB} {rss usage: 21028864 bytes/20MB} [pid: 12367|app: 0|req: 1/8] 127.0.0.1 () {42 vars in 926 bytes} [Tue Jul 21 11:29:48 2015] GET /admin/ => generated 7180 bytes in 136 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28061696 bytes/26MB} [pid: 12371|app: 0|req: 4/9] 127.0.0.1 () {42 vars in 952 bytes} [Tue Jul 21 11:29:49 2015] GET /admin/Application/g7project/ => generated 10720 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 13770752 bytes/13MB} [pid: 12370|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 818 bytes} [Tue Jul 21 11:29:49 2015] GET /admin/jsi18n/ => generated 6776 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28250112 bytes/26MB} [pid: 12370|app: 0|req: 5/11] 127.0.0.1 () {42 vars in 980 bytes} [Tue Jul 21 11:29:51 2015] GET /admin/Application/g7project/24/ => generated 12781 bytes in 117 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28286976 bytes/26MB} [pid: 12370|app: 0|req: 6/12] 127.0.0.1 () {40 vars in 821 bytes} [Tue Jul 21 11:29:51 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28188672 bytes/26MB} [pid: 12371|app: 0|req: 5/13] 127.0.0.1 () {42 vars in 933 bytes} [Tue Jul 21 11:33:30 2015] GET /admin/ => generated 7180 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28250112 bytes/26MB} [pid: 12371|app: 0|req: 6/14] 127.0.0.1 () {42 vars in 940 bytes} [Tue Jul 21 11:33:31 2015] GET /admin/Account/g7group/ => generated 5894 bytes in 36 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 28303360 bytes/26MB} [pid: 12370|app: 0|req: 7/15] 127.0.0.1 () {40 vars in 812 bytes} [Tue Jul 21 11:33:31 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28565504 bytes/27MB} [pid: 12370|app: 0|req: 8/16] 127.0.0.1 () {42 vars in 960 bytes} [Tue Jul 21 11:33:32 2015] GET /admin/Account/g7group/1/ => generated 12011 bytes in 56 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28278784 bytes/26MB} [pid: 12371|app: 0|req: 7/17] 127.0.0.1 () {40 vars in 814 bytes} [Tue Jul 21 11:33:32 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 28762112 bytes/27MB} [pid: 12370|app: 0|req: 9/18] 127.0.0.1 () {42 vars in 958 bytes} [Tue Jul 21 12:01:33 2015] GET /admin/Account/g7group/ => generated 5894 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 14200832 bytes/13MB} [pid: 12368|app: 0|req: 2/19] 127.0.0.1 () {40 vars in 812 bytes} [Tue Jul 21 12:01:33 2015] GET /admin/jsi18n/ => generated 6776 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2575773696 bytes/2456MB} {rss usage: 15810560 bytes/15MB} [pid: 12369|app: 0|req: 1/20] 127.0.0.1 () {40 vars in 792 bytes} [Thu Jul 23 14:36:52 2015] GET /admin/ => generated 0 bytes in 248 msecs (HTTP/1.1 302) 8 headers in 402 bytes (1 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 16531456 bytes/15MB} [pid: 12370|app: 0|req: 10/21] 127.0.0.1 () {40 vars in 829 bytes} [Thu Jul 23 14:36:52 2015] GET /admin/login/?next=/admin/ => generated 1917 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2575773696 bytes/2456MB} {rss usage: 15925248 bytes/15MB} [pid: 12369|app: 0|req: 2/22] 127.0.0.1 () {40 vars in 808 bytes} [Thu Jul 23 14:36:53 2015] GET /admin/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 7 headers in 271 bytes (2 switches on core 0)
-{address space usage: 2593599488 bytes/2473MB} {rss usage: 16162816 bytes/15MB} [pid: 12371|app: 0|req: 8/23] 127.0.0.1 () {40 vars in 845 bytes} [Thu Jul 23 14:36:53 2015] GET /admin/login/?next=/admin/ => generated 1917 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-Thu Jul 23 18:35:08 2015 - ...brutally killing workers...
-Thu Jul 23 18:35:09 2015 - worker 8 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 7 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 6 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 5 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 4 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 3 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 2 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - worker 1 buried after 1 seconds
-Thu Jul 23 18:35:09 2015 - binary reloading uWSGI...
-Thu Jul 23 18:35:09 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Thu Jul 23 18:35:09 2015 - closing all non-uwsgi socket fds > 2 (max_fd = 2560)...
-Thu Jul 23 18:35:09 2015 - found fd 3 mapped to socket 0 (127.0.0.1:8882)
-Thu Jul 23 18:35:09 2015 - running /usr/local/bin/uwsgi
-Fri Jul 24 09:28:09 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Jul 24 09:28:09 2015] ***
-Fri Jul 24 09:28:09 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Jul 24 09:28:09 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Jul 24 09:28:09 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Jul 24 09:28:09 2015 - machine: x86_64
-Fri Jul 24 09:28:09 2015 - clock source: unix
-Fri Jul 24 09:28:09 2015 - pcre jit disabled
-Fri Jul 24 09:28:09 2015 - detected number of CPU cores: 8
-Fri Jul 24 09:28:09 2015 - current working directory: /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Fri Jul 24 09:28:09 2015 - writing pidfile to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Jul 24 09:28:09 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Jul 24 09:28:09 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin
-Fri Jul 24 09:28:09 2015 - your processes number limit is 709
-Fri Jul 24 09:28:09 2015 - limiting address space of processes...
-Fri Jul 24 09:28:09 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Jul 24 09:28:09 2015 - your memory page size is 4096 bytes
-Fri Jul 24 09:28:09 2015 - detected max file descriptor number: 256
-Fri Jul 24 09:28:09 2015 - lock engine: OSX spinlocks
-Fri Jul 24 09:28:09 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Jul 24 09:28:09 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Jul 24 09:28:09 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Jul 24 09:28:10 2015 - Python main interpreter initialized at 0x7feb6ad00f10
-Fri Jul 24 09:28:10 2015 - python threads support enabled
-Fri Jul 24 09:28:10 2015 - your server socket listen backlog is limited to 80 connections
-Fri Jul 24 09:28:10 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Jul 24 09:28:10 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Jul 24 09:28:10 2015 - *** Operational MODE: preforking ***
-Fri Jul 24 09:28:10 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Jul 24 09:28:10 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/ to pythonpath.
-Fri Jul 24 09:28:10 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/ to pythonpath.
-Fri Jul 24 09:28:10 2015 - added /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Jul 24 09:28:10 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7feb6ad00f10 pid: 806 (default app)
-Fri Jul 24 09:28:10 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Jul 24 09:28:10 2015 - spawned uWSGI master process (pid: 806)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 1 (pid: 812, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 2 (pid: 813, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 3 (pid: 814, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 4 (pid: 815, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 5 (pid: 816, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 6 (pid: 817, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 7 (pid: 818, cores: 1)
-Fri Jul 24 09:28:10 2015 - spawned uWSGI worker 8 (pid: 819, cores: 1)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 21286912 bytes/20MB} [pid: 814|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 883 bytes} [Fri Jul 24 09:28:16 2015] GET /admin/ => generated 7180 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22487040 bytes/21MB} [pid: 814|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 966 bytes} [Fri Jul 24 09:28:18 2015] GET /admin/Application/g7project/ => generated 10720 bytes in 60 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2584162304 bytes/2464MB} {rss usage: 16916480 bytes/16MB} [pid: 817|app: 0|req: 1/3] 127.0.0.1 () {40 vars in 817 bytes} [Fri Jul 24 09:28:18 2015] GET /admin/jsi18n/ => generated 6776 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2584686592 bytes/2464MB} {rss usage: 21213184 bytes/20MB} [pid: 818|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 944 bytes} [Fri Jul 24 09:28:24 2015] GET /admin/ => generated 7180 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
-{address space usage: 2592288768 bytes/2472MB} {rss usage: 22274048 bytes/21MB} [pid: 819|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 897 bytes} [Fri Jul 24 09:28:27 2015] GET /admin/Account/g7user/ => generated 15812 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
-{address space usage: 2592550912 bytes/2472MB} {rss usage: 17195008 bytes/16MB} [pid: 817|app: 0|req: 2/6] 127.0.0.1 () {40 vars in 810 bytes} [Fri Jul 24 09:28:27 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 23072768 bytes/22MB} [pid: 818|app: 0|req: 2/7] 127.0.0.1 () {42 vars in 916 bytes} [Fri Jul 24 09:28:28 2015] GET /admin/Account/g7user/3/ => generated 13411 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2592288768 bytes/2472MB} {rss usage: 22458368 bytes/21MB} [pid: 819|app: 0|req: 2/8] 127.0.0.1 () {40 vars in 812 bytes} [Fri Jul 24 09:28:28 2015] GET /admin/jsi18n/ => generated 6776 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 29069312 bytes/27MB} [pid: 819|app: 0|req: 3/9] 127.0.0.1 () {44 vars in 969 bytes} [Fri Jul 24 10:14:21 2015] GET /admin/Account/g7user/ => generated 15812 bytes in 68 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 29085696 bytes/27MB} [pid: 819|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 810 bytes} [Fri Jul 24 10:14:21 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 23105536 bytes/22MB} [pid: 818|app: 0|req: 3/11] 127.0.0.1 () {44 vars in 937 bytes} [Fri Jul 24 10:14:22 2015] GET /admin/ => generated 7180 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
-{address space usage: 2584948736 bytes/2465MB} {rss usage: 22188032 bytes/21MB} [pid: 816|app: 0|req: 1/12] 127.0.0.1 () {44 vars in 966 bytes} [Fri Jul 24 10:14:23 2015] GET /admin/Application/g7project/ => generated 10720 bytes in 107 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2592550912 bytes/2472MB} {rss usage: 17223680 bytes/16MB} [pid: 817|app: 0|req: 3/13] 127.0.0.1 () {40 vars in 817 bytes} [Fri Jul 24 10:14:23 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 29356032 bytes/27MB} [pid: 819|app: 0|req: 5/14] 127.0.0.1 () {44 vars in 994 bytes} [Fri Jul 24 10:14:27 2015] GET /admin/Application/g7project/24/ => generated 12781 bytes in 75 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
-{address space usage: 2593337344 bytes/2473MB} {rss usage: 23265280 bytes/22MB} [pid: 818|app: 0|req: 4/15] 127.0.0.1 () {40 vars in 820 bytes} [Fri Jul 24 10:14:27 2015] GET /admin/jsi18n/ => generated 6776 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
-Sun Jul 26 11:31:02 2015 - ...brutally killing workers...
-Sun Jul 26 11:31:03 2015 - worker 8 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 7 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 6 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 5 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 4 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 3 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 2 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - worker 1 buried after 1 seconds
-Sun Jul 26 11:31:03 2015 - binary reloading uWSGI...
-Sun Jul 26 11:31:03 2015 - chdir() to /Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/G7Platform
-Sun Jul 26 11:31:03 2015 - closing all non-uwsgi socket fds > 2 (max_fd = 256)...
-Sun Jul 26 11:31:03 2015 - found fd 3 mapped to socket 0 (127.0.0.1:8882)
-Sun Jul 26 11:31:03 2015 - running /usr/local/bin/uwsgi
+Fri Aug  7 15:24:41 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:24:41 2015] ***
+Fri Aug  7 15:24:41 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Fri Aug  7 15:24:41 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Fri Aug  7 15:24:41 2015 - nodename: yuyangdeMacBook-Pro.local
+Fri Aug  7 15:24:41 2015 - machine: x86_64
+Fri Aug  7 15:24:41 2015 - clock source: unix
+Fri Aug  7 15:24:41 2015 - pcre jit disabled
+Fri Aug  7 15:24:41 2015 - detected number of CPU cores: 8
+Fri Aug  7 15:24:41 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
+Fri Aug  7 15:24:41 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Fri Aug  7 15:24:41 2015 - detected binary path: /usr/local/bin/uwsgi
+Fri Aug  7 15:24:41 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
+Fri Aug  7 15:24:41 2015 - your processes number limit is 709
+Fri Aug  7 15:24:41 2015 - limiting address space of processes...
+Fri Aug  7 15:24:41 2015 - your process address space limit is 314572800 bytes (300 MB)
+Fri Aug  7 15:24:41 2015 - your memory page size is 4096 bytes
+Fri Aug  7 15:24:41 2015 - detected max file descriptor number: 2560
+Fri Aug  7 15:24:41 2015 - lock engine: OSX spinlocks
+Fri Aug  7 15:24:41 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Aug  7 15:24:41 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Fri Aug  7 15:24:41 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Fri Aug  7 15:24:41 2015 - Python main interpreter initialized at 0x7ff3b2500a50
+Fri Aug  7 15:24:41 2015 - python threads support enabled
+Fri Aug  7 15:24:41 2015 - your server socket listen backlog is limited to 80 connections
+Fri Aug  7 15:24:41 2015 - your mercy for graceful operations on workers is 60 seconds
+Fri Aug  7 15:24:41 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Fri Aug  7 15:24:41 2015 - *** Operational MODE: preforking ***
+Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
+Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Fri Aug  7 15:24:41 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ff3b2500a50 pid: 11383 (default app)
+Fri Aug  7 15:24:41 2015 - *** uWSGI is running in multiple interpreter mode ***
+Fri Aug  7 15:24:41 2015 - spawned uWSGI master process (pid: 11383)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 1 (pid: 11389, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 2 (pid: 11390, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 3 (pid: 11391, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 4 (pid: 11392, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 5 (pid: 11393, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 6 (pid: 11394, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 7 (pid: 11395, cores: 1)
+Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 8 (pid: 11396, cores: 1)
+{address space usage: 2592026624 bytes/2471MB} {rss usage: 21430272 bytes/20MB} [pid: 11395|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 797 bytes} [Fri Aug  7 15:24:46 2015] GET /admin/ => generated 7180 bytes in 99 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+Fri Aug  7 15:26:26 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:26:26 2015] ***
+Fri Aug  7 15:26:26 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Fri Aug  7 15:26:26 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Fri Aug  7 15:26:26 2015 - nodename: yuyangdeMacBook-Pro.local
+Fri Aug  7 15:26:26 2015 - machine: x86_64
+Fri Aug  7 15:26:26 2015 - clock source: unix
+Fri Aug  7 15:26:26 2015 - pcre jit disabled
+Fri Aug  7 15:26:26 2015 - detected number of CPU cores: 8
+Fri Aug  7 15:26:26 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
+Fri Aug  7 15:26:26 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Fri Aug  7 15:26:26 2015 - detected binary path: /usr/local/bin/uwsgi
+Fri Aug  7 15:26:26 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
+Fri Aug  7 15:26:26 2015 - your processes number limit is 709
+Fri Aug  7 15:26:26 2015 - limiting address space of processes...
+Fri Aug  7 15:26:26 2015 - your process address space limit is 314572800 bytes (300 MB)
+Fri Aug  7 15:26:26 2015 - your memory page size is 4096 bytes
+Fri Aug  7 15:26:26 2015 - detected max file descriptor number: 2560
+Fri Aug  7 15:26:26 2015 - lock engine: OSX spinlocks
+Fri Aug  7 15:26:26 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Aug  7 15:26:26 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Fri Aug  7 15:26:26 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Fri Aug  7 15:26:26 2015 - Python main interpreter initialized at 0x7fb3ea700780
+Fri Aug  7 15:26:26 2015 - python threads support enabled
+Fri Aug  7 15:26:26 2015 - your server socket listen backlog is limited to 80 connections
+Fri Aug  7 15:26:26 2015 - your mercy for graceful operations on workers is 60 seconds
+Fri Aug  7 15:26:26 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Fri Aug  7 15:26:26 2015 - *** Operational MODE: preforking ***
+Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
+Fri Aug  7 15:26:27 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fb3ea700780 pid: 11558 (default app)
+Fri Aug  7 15:26:27 2015 - *** uWSGI is running in multiple interpreter mode ***
+Fri Aug  7 15:26:27 2015 - spawned uWSGI master process (pid: 11558)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 1 (pid: 11564, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 2 (pid: 11565, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 3 (pid: 11566, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 4 (pid: 11567, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 5 (pid: 11568, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 6 (pid: 11569, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 7 (pid: 11570, cores: 1)
+Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 8 (pid: 11571, cores: 1)
+{address space usage: 2592026624 bytes/2471MB} {rss usage: 21323776 bytes/20MB} [pid: 11571|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 773 bytes} [Fri Aug  7 15:26:27 2015] GET /admin/ => generated 7180 bytes in 100 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)

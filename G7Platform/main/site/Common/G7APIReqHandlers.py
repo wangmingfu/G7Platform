@@ -5,7 +5,7 @@ __author__ = 'helios'
 '''
 
 from Account.models import G7User
-from G7Platform.main.site.Commons.G7ReqHandlers import *
+from G7Platform.main.site.Common.G7ReqHandlers import *
 
 class G7APIReqHandler(G7ReqHandler):
     """api请求基类"""

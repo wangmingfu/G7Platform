@@ -2,7 +2,7 @@
 __author__ = 'yuyang'
 
 from G7Platform.G7Globals import *
-from G7Platform.main.site.Commons.G7WebReqHandlers import G7WebReqHandler
+from G7Platform.main.site.Common.G7WebReqHandlers import G7WebReqHandler
 
 
 class G7AccountReqHandler(G7WebReqHandler):
