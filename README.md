@@ -57,8 +57,11 @@
 	uwsgi（django部署uwsgi环境的配置）
 
 	1.5.3 脚本 - G7Platform/workspace/shell: 存放着G7Platform的操作脚本，
-	其中G7PlatformInitial.command是自动在mac操作系统上部署环境，G7PlatformRestart.command是重新开启G7Platform服务，G7PlatformStart.command是开启G7Platform的服务，
-	G7PlatformStop.command是关闭G7Platform的服务，packages是存放需要安装的包，
+	其中G7PlatformInitial.command是自动在mac操作系统上部署环境，
+	G7PlatformRestart.command是重新开启G7Platform服务，
+	G7PlatformStart.command是开启G7Platform的服务，
+	G7PlatformStop.command是关闭G7Platform的服务，
+	packages是存放需要安装的包，
 	tools是在shell脚本运行中需要的其他脚本工具
 
 3.初始化环境
@@ -91,7 +94,8 @@
 
 7.如何开发
 
-	在G7Platform/main/site目录中创建一个新的脚本（如：BMIndexReqHandlers.py）并且新建一个类(BMIndexReqHandler继承G7Platform/main/site/Common的G7ReqHandlers模块中的G7ReqHandler)，
+	在G7Platform/main/site目录中创建一个新的脚本（如：BMIndexReqHandlers.py）并且新建一个类
+	(BMIndexReqHandler继承G7Platform/main/site/Common的G7ReqHandlers模块中的G7ReqHandler)，
 	在G7Platform/profile/settings/web/BMURLs.py中的urlList按照格式加入一个你需要新建的url，
 	并且跟之前建立的BMIndexReqHandler类关联，然后就可以根据路径去访问你建立的接口了。
 
