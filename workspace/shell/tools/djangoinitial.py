@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'yuyang'
 
-from G7Platform.main.G7Bridge import *
-djangoload()
 from G7Platform.G7Globals import *
+djangoload()
 from G7Platform.profile.G7Services import *
 
 import os

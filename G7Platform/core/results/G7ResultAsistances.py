@@ -3,16 +3,9 @@ __author__ = 'yuyang'
 import json
 from G7Platform.profile.settings.web.G7Results import G7ResultDic
 
+class G7ResultAsistance:
 
-class G7ResultManager:
-
-    #单例设计模式
-    def __new__(cls, *args, **kwargs):
-        if not hasattr(cls,'_inst'):
-            cls._inst=super(G7ResultManager,cls).__new__(cls,*args,**kwargs)
-        return cls._inst
-
-    def resultErrorDataWrapperToJson(self, code, data={}):
+    def resultErrorDataWrapperToJson(code, data={}):
 
         retDic = {}
         if type(code) == type(""):
@@ -29,7 +22,7 @@ class G7ResultManager:
 
         return retDic
 
-    def resultErrorDataWrapperToJsonString(self, code, data={}):
+    def resultErrorDataWrapperToJsonString(code, data={}):
 
         retDic = {}
         if type(code) == type(""):
@@ -48,7 +41,7 @@ class G7ResultManager:
         return json.dumps(retDic)
 
 
-    def resultSuccessDataWrapperToJson(self, message, data={}):
+    def resultSuccessDataWrapperToJson(message, data={}):
 
         retData = {}
         retDic = {

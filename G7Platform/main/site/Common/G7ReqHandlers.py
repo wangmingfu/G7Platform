@@ -4,7 +4,7 @@ __author__ = 'helios'
 from G7Platform.G7Globals import *
 from G7Platform.core.database.G7DBManagers import G7DBManager
 from G7Platform.profile.settings.G7Settings import template_path, static_path
-from G7Platform.core.results.G7ResultManagers import G7ResultManager
+from G7Platform.core.results.G7ResultAsistances import G7ResultAsistance
 
 class G7ReqHandler(tornado.web.RequestHandler):
     static_path = static_path
@@ -45,9 +45,9 @@ class G7ReqHandler(tornado.web.RequestHandler):
 
     def responseWrite(self,code=0, message="", data={}):
 
-        responseData = G7ResultManager().resultErrorDataWrapperToJson(code,data)
+        responseData = G7ResultAsistance.resultErrorDataWrapperToJson(code,data)
         if code == 0:
-            responseData = G7ResultManager().resultSuccessDataWrapperToJson(message, data)
+            responseData = G7ResultAsistance.resultSuccessDataWrapperToJson(message, data)
 
         responseDataText = json.dumps(responseData)
         self.write(responseDataText)

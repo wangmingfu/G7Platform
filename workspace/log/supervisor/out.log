@@ -382,3 +382,579 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
     sock.bind(sockaddr)
 OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py", line 23, in <module>
+    G7DebugServer().tornadoServerStart(port)
+  File "/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py", line 136, in tornadoServerStart
+    application.listen(port)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/web.py", line 1788, in listen
+    server.listen(port, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/tornado/netutil.py", line 187, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use

@@ -50,6 +50,8 @@ media_path = path.join(project_path,"media")
 # django 路径
 django_path = path.join(subproject_path, "main/"+django_project_name)
 
+# django管理器路径
+django_manage_path = path.join(django_path,"manage.py")
 
 ####################### 部署 ###########################
 

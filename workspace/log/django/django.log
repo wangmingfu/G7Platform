@@ -1,86 +1,126 @@
-Fri Aug  7 15:24:41 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:24:41 2015] ***
-Fri Aug  7 15:24:41 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Aug  7 15:24:41 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Aug  7 15:24:41 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Aug  7 15:24:41 2015 - machine: x86_64
-Fri Aug  7 15:24:41 2015 - clock source: unix
-Fri Aug  7 15:24:41 2015 - pcre jit disabled
-Fri Aug  7 15:24:41 2015 - detected number of CPU cores: 8
-Fri Aug  7 15:24:41 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
-Fri Aug  7 15:24:41 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Aug  7 15:24:41 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Aug  7 15:24:41 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
-Fri Aug  7 15:24:41 2015 - your processes number limit is 709
-Fri Aug  7 15:24:41 2015 - limiting address space of processes...
-Fri Aug  7 15:24:41 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Aug  7 15:24:41 2015 - your memory page size is 4096 bytes
-Fri Aug  7 15:24:41 2015 - detected max file descriptor number: 2560
-Fri Aug  7 15:24:41 2015 - lock engine: OSX spinlocks
-Fri Aug  7 15:24:41 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Aug  7 15:24:41 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Aug  7 15:24:41 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Aug  7 15:24:41 2015 - Python main interpreter initialized at 0x7ff3b2500a50
-Fri Aug  7 15:24:41 2015 - python threads support enabled
-Fri Aug  7 15:24:41 2015 - your server socket listen backlog is limited to 80 connections
-Fri Aug  7 15:24:41 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Aug  7 15:24:41 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Aug  7 15:24:41 2015 - *** Operational MODE: preforking ***
-Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
-Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
-Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Aug  7 15:24:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Aug  7 15:24:41 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ff3b2500a50 pid: 11383 (default app)
-Fri Aug  7 15:24:41 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Aug  7 15:24:41 2015 - spawned uWSGI master process (pid: 11383)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 1 (pid: 11389, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 2 (pid: 11390, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 3 (pid: 11391, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 4 (pid: 11392, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 5 (pid: 11393, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 6 (pid: 11394, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 7 (pid: 11395, cores: 1)
-Fri Aug  7 15:24:41 2015 - spawned uWSGI worker 8 (pid: 11396, cores: 1)
-{address space usage: 2592026624 bytes/2471MB} {rss usage: 21430272 bytes/20MB} [pid: 11395|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 797 bytes} [Fri Aug  7 15:24:46 2015] GET /admin/ => generated 7180 bytes in 99 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
-Fri Aug  7 15:26:26 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:26:26 2015] ***
-Fri Aug  7 15:26:26 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
-Fri Aug  7 15:26:26 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
-Fri Aug  7 15:26:26 2015 - nodename: yuyangdeMacBook-Pro.local
-Fri Aug  7 15:26:26 2015 - machine: x86_64
-Fri Aug  7 15:26:26 2015 - clock source: unix
-Fri Aug  7 15:26:26 2015 - pcre jit disabled
-Fri Aug  7 15:26:26 2015 - detected number of CPU cores: 8
-Fri Aug  7 15:26:26 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
-Fri Aug  7 15:26:26 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
-Fri Aug  7 15:26:26 2015 - detected binary path: /usr/local/bin/uwsgi
-Fri Aug  7 15:26:26 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
-Fri Aug  7 15:26:26 2015 - your processes number limit is 709
-Fri Aug  7 15:26:26 2015 - limiting address space of processes...
-Fri Aug  7 15:26:26 2015 - your process address space limit is 314572800 bytes (300 MB)
-Fri Aug  7 15:26:26 2015 - your memory page size is 4096 bytes
-Fri Aug  7 15:26:26 2015 - detected max file descriptor number: 2560
-Fri Aug  7 15:26:26 2015 - lock engine: OSX spinlocks
-Fri Aug  7 15:26:26 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
-Fri Aug  7 15:26:26 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
-Fri Aug  7 15:26:26 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
-Fri Aug  7 15:26:26 2015 - Python main interpreter initialized at 0x7fb3ea700780
-Fri Aug  7 15:26:26 2015 - python threads support enabled
-Fri Aug  7 15:26:26 2015 - your server socket listen backlog is limited to 80 connections
-Fri Aug  7 15:26:26 2015 - your mercy for graceful operations on workers is 60 seconds
-Fri Aug  7 15:26:26 2015 - mapped 654840 bytes (639 KB) for 8 cores
-Fri Aug  7 15:26:26 2015 - *** Operational MODE: preforking ***
-Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
-Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
-Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
-Fri Aug  7 15:26:26 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
-Fri Aug  7 15:26:27 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fb3ea700780 pid: 11558 (default app)
-Fri Aug  7 15:26:27 2015 - *** uWSGI is running in multiple interpreter mode ***
-Fri Aug  7 15:26:27 2015 - spawned uWSGI master process (pid: 11558)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 1 (pid: 11564, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 2 (pid: 11565, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 3 (pid: 11566, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 4 (pid: 11567, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 5 (pid: 11568, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 6 (pid: 11569, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 7 (pid: 11570, cores: 1)
-Fri Aug  7 15:26:27 2015 - spawned uWSGI worker 8 (pid: 11571, cores: 1)
-{address space usage: 2592026624 bytes/2471MB} {rss usage: 21323776 bytes/20MB} [pid: 11571|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 773 bytes} [Fri Aug  7 15:26:27 2015] GET /admin/ => generated 7180 bytes in 100 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+Fri Aug  7 15:54:41 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:54:41 2015] ***
+Fri Aug  7 15:54:41 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Fri Aug  7 15:54:41 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Fri Aug  7 15:54:41 2015 - nodename: yuyangdeMacBook-Pro.local
+Fri Aug  7 15:54:41 2015 - machine: x86_64
+Fri Aug  7 15:54:41 2015 - clock source: unix
+Fri Aug  7 15:54:41 2015 - pcre jit disabled
+Fri Aug  7 15:54:41 2015 - detected number of CPU cores: 8
+Fri Aug  7 15:54:41 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
+Fri Aug  7 15:54:41 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Fri Aug  7 15:54:41 2015 - detected binary path: /usr/local/bin/uwsgi
+Fri Aug  7 15:54:41 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
+Fri Aug  7 15:54:41 2015 - your processes number limit is 709
+Fri Aug  7 15:54:41 2015 - limiting address space of processes...
+Fri Aug  7 15:54:41 2015 - your process address space limit is 314572800 bytes (300 MB)
+Fri Aug  7 15:54:41 2015 - your memory page size is 4096 bytes
+Fri Aug  7 15:54:41 2015 - detected max file descriptor number: 2560
+Fri Aug  7 15:54:41 2015 - lock engine: OSX spinlocks
+Fri Aug  7 15:54:41 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Aug  7 15:54:41 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Fri Aug  7 15:54:41 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Fri Aug  7 15:54:41 2015 - Python main interpreter initialized at 0x7fc25be00df0
+Fri Aug  7 15:54:41 2015 - python threads support enabled
+Fri Aug  7 15:54:41 2015 - your server socket listen backlog is limited to 80 connections
+Fri Aug  7 15:54:41 2015 - your mercy for graceful operations on workers is 60 seconds
+Fri Aug  7 15:54:41 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Fri Aug  7 15:54:41 2015 - *** Operational MODE: preforking ***
+Fri Aug  7 15:54:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Fri Aug  7 15:54:41 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
+Fri Aug  7 15:54:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Fri Aug  7 15:54:41 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Fri Aug  7 15:54:42 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fc25be00df0 pid: 12294 (default app)
+Fri Aug  7 15:54:42 2015 - *** uWSGI is running in multiple interpreter mode ***
+Fri Aug  7 15:54:42 2015 - spawned uWSGI master process (pid: 12294)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 1 (pid: 12300, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 2 (pid: 12301, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 3 (pid: 12302, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 4 (pid: 12303, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 5 (pid: 12304, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 6 (pid: 12305, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 7 (pid: 12306, cores: 1)
+Fri Aug  7 15:54:42 2015 - spawned uWSGI worker 8 (pid: 12307, cores: 1)
+Fri Aug  7 15:55:04 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:55:04 2015] ***
+Fri Aug  7 15:55:04 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Fri Aug  7 15:55:04 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Fri Aug  7 15:55:04 2015 - nodename: yuyangdeMacBook-Pro.local
+Fri Aug  7 15:55:04 2015 - machine: x86_64
+Fri Aug  7 15:55:04 2015 - clock source: unix
+Fri Aug  7 15:55:04 2015 - pcre jit disabled
+Fri Aug  7 15:55:04 2015 - detected number of CPU cores: 8
+Fri Aug  7 15:55:04 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
+Fri Aug  7 15:55:04 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Fri Aug  7 15:55:04 2015 - detected binary path: /usr/local/bin/uwsgi
+Fri Aug  7 15:55:04 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
+Fri Aug  7 15:55:04 2015 - your processes number limit is 709
+Fri Aug  7 15:55:04 2015 - limiting address space of processes...
+Fri Aug  7 15:55:04 2015 - your process address space limit is 314572800 bytes (300 MB)
+Fri Aug  7 15:55:04 2015 - your memory page size is 4096 bytes
+Fri Aug  7 15:55:04 2015 - detected max file descriptor number: 2560
+Fri Aug  7 15:55:04 2015 - lock engine: OSX spinlocks
+Fri Aug  7 15:55:04 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Aug  7 15:55:04 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Fri Aug  7 15:55:04 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Fri Aug  7 15:55:04 2015 - Python main interpreter initialized at 0x7f85c0d00be0
+Fri Aug  7 15:55:04 2015 - python threads support enabled
+Fri Aug  7 15:55:04 2015 - your server socket listen backlog is limited to 80 connections
+Fri Aug  7 15:55:04 2015 - your mercy for graceful operations on workers is 60 seconds
+Fri Aug  7 15:55:04 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Fri Aug  7 15:55:04 2015 - *** Operational MODE: preforking ***
+Fri Aug  7 15:55:04 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Fri Aug  7 15:55:04 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
+Fri Aug  7 15:55:04 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Fri Aug  7 15:55:04 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Fri Aug  7 15:55:05 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f85c0d00be0 pid: 12456 (default app)
+Fri Aug  7 15:55:05 2015 - *** uWSGI is running in multiple interpreter mode ***
+Fri Aug  7 15:55:05 2015 - spawned uWSGI master process (pid: 12456)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 1 (pid: 12462, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 2 (pid: 12463, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 3 (pid: 12464, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 4 (pid: 12465, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 5 (pid: 12466, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 6 (pid: 12467, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 7 (pid: 12468, cores: 1)
+Fri Aug  7 15:55:05 2015 - spawned uWSGI worker 8 (pid: 12469, cores: 1)
+Fri Aug  7 15:55:27 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Fri Aug  7 15:55:27 2015] ***
+Fri Aug  7 15:55:27 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Fri Aug  7 15:55:27 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Fri Aug  7 15:55:27 2015 - nodename: yuyangdeMacBook-Pro.local
+Fri Aug  7 15:55:27 2015 - machine: x86_64
+Fri Aug  7 15:55:27 2015 - clock source: unix
+Fri Aug  7 15:55:27 2015 - pcre jit disabled
+Fri Aug  7 15:55:27 2015 - detected number of CPU cores: 8
+Fri Aug  7 15:55:27 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform
+Fri Aug  7 15:55:27 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Fri Aug  7 15:55:27 2015 - detected binary path: /usr/local/bin/uwsgi
+Fri Aug  7 15:55:27 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin
+Fri Aug  7 15:55:27 2015 - your processes number limit is 709
+Fri Aug  7 15:55:27 2015 - limiting address space of processes...
+Fri Aug  7 15:55:27 2015 - your process address space limit is 314572800 bytes (300 MB)
+Fri Aug  7 15:55:27 2015 - your memory page size is 4096 bytes
+Fri Aug  7 15:55:27 2015 - detected max file descriptor number: 2560
+Fri Aug  7 15:55:27 2015 - lock engine: OSX spinlocks
+Fri Aug  7 15:55:27 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Aug  7 15:55:27 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Fri Aug  7 15:55:27 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Fri Aug  7 15:55:27 2015 - Python main interpreter initialized at 0x7fdae3e016c0
+Fri Aug  7 15:55:27 2015 - python threads support enabled
+Fri Aug  7 15:55:27 2015 - your server socket listen backlog is limited to 80 connections
+Fri Aug  7 15:55:27 2015 - your mercy for graceful operations on workers is 60 seconds
+Fri Aug  7 15:55:27 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Fri Aug  7 15:55:27 2015 - *** Operational MODE: preforking ***
+Fri Aug  7 15:55:27 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Fri Aug  7 15:55:27 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Fri Aug  7 15:55:27 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Fri Aug  7 15:55:27 2015 - added /Users/yuyang/workspace/git/G7Platform/ to pythonpath.
+Fri Aug  7 15:55:27 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fdae3e016c0 pid: 12615 (default app)
+Fri Aug  7 15:55:27 2015 - *** uWSGI is running in multiple interpreter mode ***
+Fri Aug  7 15:55:27 2015 - spawned uWSGI master process (pid: 12615)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 1 (pid: 12621, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 2 (pid: 12622, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 3 (pid: 12623, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 4 (pid: 12624, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 5 (pid: 12625, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 6 (pid: 12626, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 7 (pid: 12627, cores: 1)
+Fri Aug  7 15:55:27 2015 - spawned uWSGI worker 8 (pid: 12628, cores: 1)
