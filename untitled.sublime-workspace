@@ -113,10 +113,48 @@
 	"expanded_folders":
 	[
 		"/Users/yuyang/workspace/git/G7Platform",
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform"
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/g7admin/Account",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Account",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Common",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/settings/web",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/django",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/supervisor",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/php",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell"
 	],
 	"file_history":
 	[
+		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/g7platform/g7platform.conf",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Account/G7AccountReqHandlers.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/core/tool/Cryptor/G7Cryptor.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/core/tool/Cryptor/G7CryptorManagers.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Common/G7APIReqHandlers.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/G7Services.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/settings/G7Settings.py",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/django/django.log",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/supervisor/tornado.log",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/supervisor/out.log",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/log/G7Platform.log",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/log/error.log",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/log/access.log",
+		"/Users/yuyang/workspace/git/G7Platform/README.md",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/core/database/G7DBManagers.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Common/G7WebReqHandlers.py",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformRestart.command",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformShell.command",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/tools/g7platformshell.py",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/tools/djangoinitial.py",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformStart.command",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformStop.command",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformInitial.command",
+		"/Users/yuyang/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/yuyang/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/main.py",
+		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/supervisor/supervisor.conf",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Common/G7ReqHandlers.py",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/core/results/G7ResultAsistances.py",
+		"/Users/yuyang/workspace/git/G7Platform/g7platform.sublime-project",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/profile/settings/web/G7URLs.py",
 		"/Users/yuyang/workspace/git/G7Platform/__init__.py",
 		"/Users/yuyang/workspace/gao7/code/G7Framework/G7UDK/1.1/README.md",
 		"/Users/yuyang/workspace/gao7/code/G7Framework/G7UDK/README.md",
@@ -213,42 +251,11 @@
 		"/Users/yuyang/workspace/git/BMProject/README.md",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/BMPlatform/BMPlatform/sql/done_usersystem.sql",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/BMPlatform/BMPlatform/sql/done_list.sql",
-		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/Gao7Platform/profile/G7Services.py",
-		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/Gao7Platform/G7Platform.py",
-		"/Users/yuyang/百度云同步盘/项目/BiteMage/Code/BiteMage/Accounts/models.py",
-		"/Users/yuyang/百度云同步盘/项目/BiteMage/Code/BiteMage/Accounts/urls.py",
-		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/workspace/shell/G7PlatformInitial.command",
-		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/README.md",
-		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/Gao7Platform/main/site/Account/G7AccountReqHandlers.py",
-		"/Users/yuyang/workspace/gao7/project/project.command",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/profile/nginx/nginx.conf",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/profile/nginx/g7platform/g7platform.conf",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Web/trunk/web/BMPlatform/BMPlatform/main/admin/admin/settings.py",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Web/trunk/web/BMPlatform/workspace/shell/BMPlatformStart.command",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Web/trunk/web/BMPlatform/workspace/shell/tools/kill_process.py",
-		"/Users/yuyang/workspace/git/MySQL-for-Python-31/setup_posix.py",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/shell/packages/MySQL-python-1.2.4b4/MySQLdb/cursors.py",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/shell/packages/MySQL-python-1.2.4b4/MySQLdb/connections.py",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/shell/packages/MySQL-python-1.2.4b4/setup_posix.py",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Web/trunk/web/BMPlatform/workspace/shell/BMPlatformInitial.command",
-		"/Users/yuyang/BMPlatform/BMPlatform/profile/settings/BMSettings.py",
-		"/Users/yuyang/BMPlatform/BMPlatform/profile/BMServices.py",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/ui/设计资源目录",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Android/Phone/安卓手机源码",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Android/Tablet/安卓平板应用源码",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Android/Wear/安卓可穿戴设备应用源码",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Android/安卓源码",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/Android/Desktop/安卓桌面应用源码",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/code/代码目录",
-		"/Users/yuyang/workspace/git/BMProject/BMPlatform/项目目录",
-		"/Users/yuyang/workspace/gao7/project/Gao7Platform/code/Web/trunk/web/Gao7Platform/workspace/shell/G7PlatformRestart.command",
-		"/Users/yuyang/BMPlatform/workspace/shell/BMPlatformStop.command",
-		"/Users/yuyang/BMPlatform/workspace/shell/BMPlatformRestart.command",
-		"/Users/yuyang/Documents/SILK/未命名文件夹/SILK.LABO.東京戀愛模様.TOKYO.LOVERS.LIFE.東京戀愛模樣-07.srt"
+		"/Users/yuyang/workspace/gao7/code/Gao7Platform/trunk/Gao7Platform/Gao7Platform/profile/G7Services.py"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -263,6 +270,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BMPlatform",
+			"G7ResultManager",
+			"options.dbhost\noptions.dbhost",
+			"options.dbhost",
+			"main.py",
+			"site.py",
+			"main.py",
+			"site.py",
 			"\"",
 			"[",
 			"{",
@@ -316,6 +331,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"G7Platform",
 			"'",
 			"@[",
 			"@{",
@@ -382,7 +398,7 @@
 	"project": "untitled.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
