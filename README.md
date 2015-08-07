@@ -99,6 +99,20 @@
 	在G7Platform/profile/settings/web/BMURLs.py中的urlList按照格式加入一个你需要新建的url，
 	并且跟之前建立的BMIndexReqHandler类关联，然后就可以根据路径去访问你建立的接口了。
 
+8.代码调试
+
+	# v1.0新增
+
+	双击G7Platform/workspace/shell/G7PlatformShell.command文件，将会打开一个python-shell
+	对话框，该对话框中已经加载了项目环境配置，另外如果需要帮助请用命令行添加脚本参数:
+	G7Platform/workspace/shell/G7PlatformShell.command help
+	将会出现其他命令帮助，
+	其中一个例子：
+	G7Platform/workspace/shell/G7PlatformShell.command createsuperuser
+	就是为后台创建一个新用户
+
+	注：该对话框环境主要是后台和数据库相关工具。开发中主要利用它来进行对数据的操作以及实时调试写好的代码。
+
 
 
 
