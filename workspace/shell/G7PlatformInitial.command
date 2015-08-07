@@ -136,7 +136,7 @@ then
 		python CC=gcc ./uwsgiconfig.py --build;
 		sudo CC=gcc make && make install;
 		sudo cp -rf ./uwsgi /usr/local/bin;
-		cd ../
+		cd ../;
 		sudo rm -rf uwsgi-2.0.10*;
 	fi
 

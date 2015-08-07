@@ -145,8 +145,12 @@ class G7DebugServer(G7Server):
         G7DatabaseServer().startServer()
         print("============开启django测试服务============\n")
         self.djangoServerStart(G7Profile().debug_django_port)
+        print("========http://127.0.0.1:{port}=========\n".format(port=G7Profile().debug_django_port))
+
         print("============开启tornado测试服务============\n")
+        print("========http://127.0.0.1:{port}=========\n".format(port=G7Profile().debug_tornado_port))
         self.tornadoServerStart(G7Profile().debug_tornado_port)
+
 
 class G7DatabaseServer(G7Server):
 

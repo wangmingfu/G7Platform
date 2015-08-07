@@ -8,7 +8,5 @@ from G7Platform.main.site.Common.G7WebReqHandlers import G7WebReqHandler
 class G7AccountReqHandler(G7WebReqHandler):
 
 	def get(self, *args, **kwargs):
-
-		users = G7User.objects.all()
-		g7log(users)
-		self.write("hello world! {users}".format(users=str(users)))
+		users = G7User.objects.all()[0].username
+		self.write("users: {users}".format(users=str(users)))

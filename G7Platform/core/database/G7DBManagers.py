@@ -3,7 +3,6 @@ __author__ = 'helios'
 
 from G7Platform.G7Globals import *
 
-
 class G7DBManager:
 
     #单例设计模式
@@ -14,7 +13,7 @@ class G7DBManager:
 
     #返回实例化的数据库链接对象
     def getDb(self):
-        return torndb.Connection(options.dbhost,options.dbname,options.dbuser,options.dbpwd)
+        return torndb.Connection(dbhost,dbname,dbuser,dbpwd)
 
     def sqlKeys(self, items):
         sql = ""

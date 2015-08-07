@@ -193,3 +193,381 @@
 2015-08-07 15:55:36,425 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
 2015-08-07 15:55:36,425 INFO exited: tornado-8892 (exit status 1; not expected)
 2015-08-07 15:55:37,426 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:16:39,274 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:16:39,276 INFO daemonizing the supervisord process
+2015-08-07 16:16:39,277 INFO supervisord started with pid 13367
+2015-08-07 16:16:40,281 INFO spawned: 'tornado-8894' with pid 13376
+2015-08-07 16:16:40,284 INFO spawned: 'tornado-8893' with pid 13377
+2015-08-07 16:16:40,286 INFO spawned: 'tornado-8892' with pid 13378
+2015-08-07 16:16:40,289 INFO spawned: 'tornado-8891' with pid 13379
+2015-08-07 16:16:40,982 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:40,985 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:41,021 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:41,025 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:42,029 INFO spawned: 'tornado-8894' with pid 13382
+2015-08-07 16:16:42,031 INFO spawned: 'tornado-8893' with pid 13383
+2015-08-07 16:16:42,034 INFO spawned: 'tornado-8892' with pid 13384
+2015-08-07 16:16:42,036 INFO spawned: 'tornado-8891' with pid 13386
+2015-08-07 16:16:42,593 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:42,595 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:42,596 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:42,596 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:44,601 INFO spawned: 'tornado-8894' with pid 13388
+2015-08-07 16:16:44,604 INFO spawned: 'tornado-8893' with pid 13389
+2015-08-07 16:16:44,606 INFO spawned: 'tornado-8892' with pid 13390
+2015-08-07 16:16:44,608 INFO spawned: 'tornado-8891' with pid 13391
+2015-08-07 16:16:45,167 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:45,168 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:45,169 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:45,169 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:48,578 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:16:48,581 INFO daemonizing the supervisord process
+2015-08-07 16:16:48,582 INFO supervisord started with pid 13509
+2015-08-07 16:16:49,585 INFO spawned: 'tornado-8894' with pid 13531
+2015-08-07 16:16:49,588 INFO spawned: 'tornado-8893' with pid 13532
+2015-08-07 16:16:49,590 INFO spawned: 'tornado-8892' with pid 13533
+2015-08-07 16:16:49,592 INFO spawned: 'tornado-8891' with pid 13534
+2015-08-07 16:16:50,279 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:50,281 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:50,282 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:50,283 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:51,287 INFO spawned: 'tornado-8894' with pid 13537
+2015-08-07 16:16:51,289 INFO spawned: 'tornado-8893' with pid 13538
+2015-08-07 16:16:51,292 INFO spawned: 'tornado-8892' with pid 13539
+2015-08-07 16:16:51,295 INFO spawned: 'tornado-8891' with pid 13541
+2015-08-07 16:16:51,917 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:51,920 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:51,924 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:51,925 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:53,928 INFO spawned: 'tornado-8894' with pid 13543
+2015-08-07 16:16:53,933 INFO spawned: 'tornado-8893' with pid 13544
+2015-08-07 16:16:53,936 INFO spawned: 'tornado-8892' with pid 13545
+2015-08-07 16:16:53,938 INFO spawned: 'tornado-8891' with pid 13546
+2015-08-07 16:16:54,631 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:54,632 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:54,637 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:54,645 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:57,649 INFO spawned: 'tornado-8894' with pid 13550
+2015-08-07 16:16:57,652 INFO spawned: 'tornado-8893' with pid 13551
+2015-08-07 16:16:57,655 INFO spawned: 'tornado-8892' with pid 13552
+2015-08-07 16:16:57,658 INFO spawned: 'tornado-8891' with pid 13553
+2015-08-07 16:16:58,374 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:16:58,380 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:16:58,380 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:16:58,381 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:16:58,381 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:16:58,385 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:16:58,385 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:16:59,386 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:32,877 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:18:32,880 INFO daemonizing the supervisord process
+2015-08-07 16:18:32,881 INFO supervisord started with pid 13684
+2015-08-07 16:18:33,885 INFO spawned: 'tornado-8894' with pid 13706
+2015-08-07 16:18:33,888 INFO spawned: 'tornado-8893' with pid 13707
+2015-08-07 16:18:33,890 INFO spawned: 'tornado-8892' with pid 13708
+2015-08-07 16:18:33,893 INFO spawned: 'tornado-8891' with pid 13709
+2015-08-07 16:18:34,528 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:34,528 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:34,532 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:34,543 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:35,546 INFO spawned: 'tornado-8894' with pid 13712
+2015-08-07 16:18:35,549 INFO spawned: 'tornado-8893' with pid 13713
+2015-08-07 16:18:35,551 INFO spawned: 'tornado-8892' with pid 13714
+2015-08-07 16:18:35,553 INFO spawned: 'tornado-8891' with pid 13715
+2015-08-07 16:18:36,178 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:36,179 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:36,181 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:36,184 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:38,187 INFO spawned: 'tornado-8894' with pid 13718
+2015-08-07 16:18:38,189 INFO spawned: 'tornado-8893' with pid 13719
+2015-08-07 16:18:38,191 INFO spawned: 'tornado-8892' with pid 13720
+2015-08-07 16:18:38,194 INFO spawned: 'tornado-8891' with pid 13721
+2015-08-07 16:18:38,788 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:38,791 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:38,792 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:38,792 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:41,796 INFO spawned: 'tornado-8894' with pid 13723
+2015-08-07 16:18:41,798 INFO spawned: 'tornado-8893' with pid 13724
+2015-08-07 16:18:41,800 INFO spawned: 'tornado-8892' with pid 13725
+2015-08-07 16:18:41,802 INFO spawned: 'tornado-8891' with pid 13726
+2015-08-07 16:18:42,398 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:42,404 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:42,404 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:42,407 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:42,407 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:42,408 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:42,408 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:43,408 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:48,341 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:18:48,344 INFO daemonizing the supervisord process
+2015-08-07 16:18:48,345 INFO supervisord started with pid 13845
+2015-08-07 16:18:49,348 INFO spawned: 'tornado-8894' with pid 13867
+2015-08-07 16:18:49,350 INFO spawned: 'tornado-8893' with pid 13868
+2015-08-07 16:18:49,353 INFO spawned: 'tornado-8892' with pid 13869
+2015-08-07 16:18:49,355 INFO spawned: 'tornado-8891' with pid 13870
+2015-08-07 16:18:49,979 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:49,981 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:49,983 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:49,995 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:50,998 INFO spawned: 'tornado-8894' with pid 13873
+2015-08-07 16:18:51,001 INFO spawned: 'tornado-8893' with pid 13874
+2015-08-07 16:18:51,003 INFO spawned: 'tornado-8892' with pid 13875
+2015-08-07 16:18:51,005 INFO spawned: 'tornado-8891' with pid 13876
+2015-08-07 16:18:51,648 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:51,648 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:51,657 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:51,657 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:53,660 INFO spawned: 'tornado-8894' with pid 13879
+2015-08-07 16:18:53,663 INFO spawned: 'tornado-8893' with pid 13880
+2015-08-07 16:18:53,665 INFO spawned: 'tornado-8892' with pid 13881
+2015-08-07 16:18:53,668 INFO spawned: 'tornado-8891' with pid 13882
+2015-08-07 16:18:54,241 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:54,241 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:54,241 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:54,244 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:57,249 INFO spawned: 'tornado-8894' with pid 13884
+2015-08-07 16:18:57,251 INFO spawned: 'tornado-8893' with pid 13885
+2015-08-07 16:18:57,254 INFO spawned: 'tornado-8892' with pid 13886
+2015-08-07 16:18:57,256 INFO spawned: 'tornado-8891' with pid 13887
+2015-08-07 16:18:57,905 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:18:57,908 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:57,909 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:18:57,915 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:57,915 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:18:57,923 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:18:57,924 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:18:58,924 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:19:09,462 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:19:09,464 INFO daemonizing the supervisord process
+2015-08-07 16:19:09,465 INFO supervisord started with pid 14006
+2015-08-07 16:19:10,469 INFO spawned: 'tornado-8894' with pid 14028
+2015-08-07 16:19:10,472 INFO spawned: 'tornado-8893' with pid 14029
+2015-08-07 16:19:10,474 INFO spawned: 'tornado-8892' with pid 14030
+2015-08-07 16:19:10,477 INFO spawned: 'tornado-8891' with pid 14031
+2015-08-07 16:19:11,071 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:19:11,071 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:19:11,078 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:19:11,090 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:19:12,093 INFO spawned: 'tornado-8894' with pid 14034
+2015-08-07 16:19:12,098 INFO spawned: 'tornado-8893' with pid 14035
+2015-08-07 16:19:12,100 INFO spawned: 'tornado-8892' with pid 14036
+2015-08-07 16:19:12,102 INFO spawned: 'tornado-8891' with pid 14037
+2015-08-07 16:19:12,722 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:19:12,727 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:19:12,727 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:19:12,739 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:19:14,742 INFO spawned: 'tornado-8894' with pid 14040
+2015-08-07 16:19:14,744 INFO spawned: 'tornado-8893' with pid 14041
+2015-08-07 16:19:14,747 INFO spawned: 'tornado-8892' with pid 14042
+2015-08-07 16:19:14,750 INFO spawned: 'tornado-8891' with pid 14043
+2015-08-07 16:19:15,346 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:19:15,346 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:19:15,351 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:19:15,357 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:19:18,362 INFO spawned: 'tornado-8894' with pid 14045
+2015-08-07 16:19:18,366 INFO spawned: 'tornado-8893' with pid 14046
+2015-08-07 16:19:18,370 INFO spawned: 'tornado-8892' with pid 14047
+2015-08-07 16:19:18,372 INFO spawned: 'tornado-8891' with pid 14048
+2015-08-07 16:19:18,954 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:19:18,955 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:19:18,955 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:19:18,955 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:19:18,955 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:19:18,956 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:19:18,957 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:19:19,958 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:20:14,467 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:20:14,470 INFO daemonizing the supervisord process
+2015-08-07 16:20:14,471 INFO supervisord started with pid 14172
+2015-08-07 16:20:15,475 INFO spawned: 'tornado-8894' with pid 14194
+2015-08-07 16:20:15,477 INFO spawned: 'tornado-8893' with pid 14195
+2015-08-07 16:20:15,479 INFO spawned: 'tornado-8892' with pid 14196
+2015-08-07 16:20:15,481 INFO spawned: 'tornado-8891' with pid 14197
+2015-08-07 16:20:16,112 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:20:16,112 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:20:16,113 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:20:16,113 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:20:17,117 INFO spawned: 'tornado-8894' with pid 14200
+2015-08-07 16:20:17,119 INFO spawned: 'tornado-8893' with pid 14201
+2015-08-07 16:20:17,122 INFO spawned: 'tornado-8892' with pid 14202
+2015-08-07 16:20:17,125 INFO spawned: 'tornado-8891' with pid 14203
+2015-08-07 16:20:17,832 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:20:17,848 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:20:17,872 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:20:17,878 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:20:19,881 INFO spawned: 'tornado-8894' with pid 14206
+2015-08-07 16:20:19,883 INFO spawned: 'tornado-8893' with pid 14207
+2015-08-07 16:20:19,886 INFO spawned: 'tornado-8892' with pid 14208
+2015-08-07 16:20:19,888 INFO spawned: 'tornado-8891' with pid 14209
+2015-08-07 16:20:20,561 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:20:20,564 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:20:20,566 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:20:20,566 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:20:23,571 INFO spawned: 'tornado-8894' with pid 14211
+2015-08-07 16:20:23,574 INFO spawned: 'tornado-8893' with pid 14212
+2015-08-07 16:20:23,577 INFO spawned: 'tornado-8892' with pid 14213
+2015-08-07 16:20:23,580 INFO spawned: 'tornado-8891' with pid 14214
+2015-08-07 16:20:24,162 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:20:24,163 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:20:24,166 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:20:24,166 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:20:24,167 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:20:24,173 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:20:24,173 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:20:25,174 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:21:17,686 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:21:17,690 INFO daemonizing the supervisord process
+2015-08-07 16:21:17,691 INFO supervisord started with pid 14332
+2015-08-07 16:21:18,695 INFO spawned: 'tornado-8894' with pid 14354
+2015-08-07 16:21:18,697 INFO spawned: 'tornado-8893' with pid 14355
+2015-08-07 16:21:18,699 INFO spawned: 'tornado-8892' with pid 14356
+2015-08-07 16:21:18,702 INFO spawned: 'tornado-8891' with pid 14357
+2015-08-07 16:21:19,339 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:21:19,340 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:21:19,344 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:21:19,348 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:21:20,351 INFO spawned: 'tornado-8894' with pid 14360
+2015-08-07 16:21:20,354 INFO spawned: 'tornado-8893' with pid 14361
+2015-08-07 16:21:20,356 INFO spawned: 'tornado-8892' with pid 14362
+2015-08-07 16:21:20,359 INFO spawned: 'tornado-8891' with pid 14363
+2015-08-07 16:21:20,938 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:21:20,939 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:21:20,939 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:21:20,947 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:21:22,951 INFO spawned: 'tornado-8894' with pid 14366
+2015-08-07 16:21:22,953 INFO spawned: 'tornado-8893' with pid 14367
+2015-08-07 16:21:22,956 INFO spawned: 'tornado-8892' with pid 14368
+2015-08-07 16:21:22,958 INFO spawned: 'tornado-8891' with pid 14369
+2015-08-07 16:21:23,525 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:21:23,525 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:21:23,526 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:21:23,530 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:21:26,535 INFO spawned: 'tornado-8894' with pid 14371
+2015-08-07 16:21:26,538 INFO spawned: 'tornado-8893' with pid 14372
+2015-08-07 16:21:26,540 INFO spawned: 'tornado-8892' with pid 14373
+2015-08-07 16:21:26,543 INFO spawned: 'tornado-8891' with pid 14374
+2015-08-07 16:21:27,108 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:21:27,109 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:21:27,109 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:21:27,111 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:21:27,111 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:21:27,114 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:21:27,114 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:21:28,115 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:15,651 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:23:15,653 INFO daemonizing the supervisord process
+2015-08-07 16:23:15,654 INFO supervisord started with pid 14526
+2015-08-07 16:23:16,658 INFO spawned: 'tornado-8894' with pid 14548
+2015-08-07 16:23:16,661 INFO spawned: 'tornado-8893' with pid 14549
+2015-08-07 16:23:16,663 INFO spawned: 'tornado-8892' with pid 14550
+2015-08-07 16:23:16,666 INFO spawned: 'tornado-8891' with pid 14551
+2015-08-07 16:23:17,331 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:17,335 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:17,338 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:17,346 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:18,349 INFO spawned: 'tornado-8894' with pid 14554
+2015-08-07 16:23:18,352 INFO spawned: 'tornado-8893' with pid 14555
+2015-08-07 16:23:18,354 INFO spawned: 'tornado-8892' with pid 14556
+2015-08-07 16:23:18,356 INFO spawned: 'tornado-8891' with pid 14557
+2015-08-07 16:23:19,025 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:19,028 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:19,033 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:19,053 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:21,058 INFO spawned: 'tornado-8894' with pid 14559
+2015-08-07 16:23:21,061 INFO spawned: 'tornado-8893' with pid 14560
+2015-08-07 16:23:21,063 INFO spawned: 'tornado-8892' with pid 14561
+2015-08-07 16:23:21,066 INFO spawned: 'tornado-8891' with pid 14562
+2015-08-07 16:23:21,687 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:21,688 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:21,689 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:21,690 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:24,695 INFO spawned: 'tornado-8894' with pid 14564
+2015-08-07 16:23:24,698 INFO spawned: 'tornado-8893' with pid 14565
+2015-08-07 16:23:24,700 INFO spawned: 'tornado-8892' with pid 14566
+2015-08-07 16:23:24,703 INFO spawned: 'tornado-8891' with pid 14567
+2015-08-07 16:23:25,293 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:25,298 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:25,298 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:25,302 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:25,302 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:25,305 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:25,305 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:28,440 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:23:28,444 INFO daemonizing the supervisord process
+2015-08-07 16:23:28,445 INFO supervisord started with pid 14685
+2015-08-07 16:23:29,448 INFO spawned: 'tornado-8894' with pid 14707
+2015-08-07 16:23:29,451 INFO spawned: 'tornado-8893' with pid 14708
+2015-08-07 16:23:29,453 INFO spawned: 'tornado-8892' with pid 14709
+2015-08-07 16:23:29,455 INFO spawned: 'tornado-8891' with pid 14710
+2015-08-07 16:23:30,140 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:30,140 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:30,145 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:30,150 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:31,153 INFO spawned: 'tornado-8894' with pid 14713
+2015-08-07 16:23:31,156 INFO spawned: 'tornado-8893' with pid 14715
+2015-08-07 16:23:31,159 INFO spawned: 'tornado-8892' with pid 14716
+2015-08-07 16:23:31,161 INFO spawned: 'tornado-8891' with pid 14717
+2015-08-07 16:23:31,781 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:31,788 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:31,791 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:31,791 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:33,796 INFO spawned: 'tornado-8894' with pid 14719
+2015-08-07 16:23:33,798 INFO spawned: 'tornado-8893' with pid 14720
+2015-08-07 16:23:33,800 INFO spawned: 'tornado-8892' with pid 14721
+2015-08-07 16:23:33,803 INFO spawned: 'tornado-8891' with pid 14722
+2015-08-07 16:23:34,385 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:34,386 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:34,386 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:34,388 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:37,392 INFO spawned: 'tornado-8894' with pid 14742
+2015-08-07 16:23:37,393 INFO spawned: 'tornado-8893' with pid 14743
+2015-08-07 16:23:37,396 INFO spawned: 'tornado-8892' with pid 14744
+2015-08-07 16:23:37,397 INFO spawned: 'tornado-8891' with pid 14745
+2015-08-07 16:23:38,116 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:23:38,123 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:38,123 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:23:38,130 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:38,130 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:23:38,141 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:23:38,141 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:23:39,142 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
+2015-08-07 16:29:47,394 WARN received SIGTERM indicating exit request
+2015-08-07 16:30:05,774 CRIT Supervisor running as root (no user in config file)
+2015-08-07 16:30:05,777 INFO daemonizing the supervisord process
+2015-08-07 16:30:05,778 INFO supervisord started with pid 14915
+2015-08-07 16:30:06,782 INFO spawned: 'tornado-8894' with pid 14937
+2015-08-07 16:30:06,785 INFO spawned: 'tornado-8893' with pid 14938
+2015-08-07 16:30:06,787 INFO spawned: 'tornado-8892' with pid 14939
+2015-08-07 16:30:06,790 INFO spawned: 'tornado-8891' with pid 14940
+2015-08-07 16:30:07,464 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:30:07,467 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:30:07,474 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:30:07,479 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:30:08,481 INFO spawned: 'tornado-8894' with pid 14943
+2015-08-07 16:30:08,482 INFO spawned: 'tornado-8893' with pid 14944
+2015-08-07 16:30:08,484 INFO spawned: 'tornado-8892' with pid 14945
+2015-08-07 16:30:08,487 INFO spawned: 'tornado-8891' with pid 14946
+2015-08-07 16:30:09,106 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:30:09,117 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:30:09,117 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:30:09,121 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:30:11,124 INFO spawned: 'tornado-8894' with pid 14949
+2015-08-07 16:30:11,126 INFO spawned: 'tornado-8893' with pid 14950
+2015-08-07 16:30:11,128 INFO spawned: 'tornado-8892' with pid 14951
+2015-08-07 16:30:11,130 INFO spawned: 'tornado-8891' with pid 14952
+2015-08-07 16:30:11,762 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:30:11,762 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:30:11,763 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:30:11,766 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:30:14,770 INFO spawned: 'tornado-8894' with pid 14954
+2015-08-07 16:30:14,773 INFO spawned: 'tornado-8893' with pid 14955
+2015-08-07 16:30:14,775 INFO spawned: 'tornado-8892' with pid 14956
+2015-08-07 16:30:14,778 INFO spawned: 'tornado-8891' with pid 14957
+2015-08-07 16:30:15,426 INFO exited: tornado-8891 (exit status 1; not expected)
+2015-08-07 16:30:15,431 INFO gave up: tornado-8891 entered FATAL state, too many start retries too quickly
+2015-08-07 16:30:15,432 INFO exited: tornado-8894 (exit status 1; not expected)
+2015-08-07 16:30:15,432 INFO gave up: tornado-8894 entered FATAL state, too many start retries too quickly
+2015-08-07 16:30:15,432 INFO exited: tornado-8893 (exit status 1; not expected)
+2015-08-07 16:30:15,448 INFO gave up: tornado-8893 entered FATAL state, too many start retries too quickly
+2015-08-07 16:30:15,448 INFO exited: tornado-8892 (exit status 1; not expected)
+2015-08-07 16:30:16,449 INFO gave up: tornado-8892 entered FATAL state, too many start retries too quickly
