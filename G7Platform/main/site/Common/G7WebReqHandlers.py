@@ -6,7 +6,6 @@ __author__ = 'helios'
 
 from G7Platform.main.site.Common.G7ReqHandlers import *
 
-
 class G7WebReqHandler(G7ReqHandler):
     """web请求基类"""
     pass

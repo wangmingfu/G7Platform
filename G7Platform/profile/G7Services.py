@@ -119,7 +119,7 @@ class G7ReleaseServer(G7Server):
         self.killServices()
 
         G7DatabaseServer().startServer()
-        print("=====================startSupervisorMonitor=====================")
+        print("=====================开启正式服务=====================")
         self.startSupervisorMonitor()
         self.startNginxService()
 

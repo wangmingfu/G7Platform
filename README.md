@@ -73,6 +73,12 @@
 	
 	双击G7Platform/workspace/shell/G7PlatformRestart.command
 
+	测试模式下：
+		默认可以访问: http://localhost:8884    和    http://localhost:8881/admin
+
+	正式模式下：
+		默认可以访问: http://localhost    和    http://localhost/admin
+
 5.部署目的
 
 	使用这样的部署目的是利用django框架对于admin开发的友好以及在django中建立数据模型的方便性上，
