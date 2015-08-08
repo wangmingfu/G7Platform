@@ -11,5 +11,5 @@ if __name__ == "__main__":
     check_kill_process("nginx")
     check_kill_process("uwsgi")
     check_kill_process("supervisord")
-    check_kill_process("site.py")
+    check_kill_process("main.py")
     check_kill_process("php-fpm")
