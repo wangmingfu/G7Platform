@@ -8,8 +8,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path.realpath(path.join(BASE_DIR,"../")))
 
 from G7Platform.G7Globals import djangoload
-from G7Platform.profile.G7Services import G7DebugServer
 djangoload()
+from G7Platform.profile.G7Services import G7DebugServer
 
 if __name__ == "__main__":
 

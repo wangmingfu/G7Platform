@@ -98,8 +98,67 @@ class G7ReleaseServer(G7Server):
             with open(path.join(self.superG7VisorG7ConfPath,"supervisor.conf"),"w") as f:
                 f.write(self.supervisorSettingsConfugre(G7Profile().tornado_ports,tornadoUpStreamName))
 
+        def adminConfigure():
+            g7AdmingXmlPath = os.path.join(G7Profile().project_path,"workspace/profile/uwsgi/"+G7Profile().django_project_name+"_profile.xml")
+            host = "127.0.0.1"
+            port = G7Profile().release_django_port
+            listen = 80
+            pythonpath1 = G7Profile().project_path  # G7Platform
+            pythonpath2 = G7Profile().subproject_path
+            pythonpath3 = G7Profile().subproject_path+"/main/"+G7Profile().django_project_name+"/"+G7Profile().django_project_name+"/"
+            pythonpath4 = G7Profile().subproject_path+"/main/"+G7Profile().django_project_name+"/"
+            pidfile = path.join(G7Profile().nginx_path,"pid/nginx.pid")
+            limit_as = 300
+            daemonize = G7Profile().log_path + "/django/django.log"   # logpath
+
+            childrenNodes = {
+                "chdir":G7Profile().django_path,
+                "socket":host+":"+str(port),
+                "listen":str(listen),
+                "master":"true",
+                "pidfile":pidfile,
+                "processes":"8",
+                "pythonpath1":pythonpath1,
+                "pythonpath2":pythonpath2,
+                "pythonpath3":pythonpath3,
+                "pythonpath4":pythonpath4,
+                "module":"wsgi",
+                "profiler":"true",
+                "memory-report":"true",
+                "enable-threads":"true",
+                "logdate":"true",
+                "limit-as":str(limit_as),
+                "daemonize":daemonize,
+                }
+
+            def g7AdminXmlBuilder(nodes={}, rootNodeName="", xmlpath=""):
+
+                doc = Document()
+                rootNode = doc.createElement(rootNodeName)
+                doc.appendChild(rootNode)
+                for keyName in list(nodes.keys()):
+                    if "pythonpath" in keyName:
+                        keyNode = doc.createElement("pythonpath")
+                        valueNode = doc.createTextNode(nodes[keyName])
+                        keyNode.appendChild(valueNode)
+                        rootNode.appendChild(keyNode)
+                    else:
+                        keyNode = doc.createElement(keyName)
+                        valueNode = doc.createTextNode(nodes[keyName])
+                        keyNode.appendChild(valueNode)
+                        rootNode.appendChild(keyNode)
+
+                f = open(xmlpath,'w')
+                f.write(doc.toprettyxml())
+                f.close()
+
+            g7AdminXmlBuilder(childrenNodes, "uwsgi", g7AdmingXmlPath)
+
         nginxConfigure()
+        # supervisor配置初始化:supervisor-tornado
         supervisorConfigure()
+        # admin 配置初始化:uwsgi-django
+        adminConfigure()
 
     def startSupervisorMonitor(self):
         os.system("sudo supervisord -c {conf_path};".format(conf_path=path.join(self.superG7VisorG7ConfPath,"supervisor.conf")))
