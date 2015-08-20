@@ -4,6 +4,8 @@ __author__ = 'yuyang'
 import os
 from os import path
 import tornado
+from xml.dom.minidom import Document
+
 from G7Platform.profile.G7Profiles import G7Profile
 from G7Platform.profile.settings.web.G7URLs import urlList
 from G7Platform.profile.settings.nginx.G7NginxSettings import G7NginxSetting

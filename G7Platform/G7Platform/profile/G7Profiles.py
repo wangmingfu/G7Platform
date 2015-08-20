@@ -52,70 +52,7 @@ class G7Profile:
         # 全局定义
         self.defineMacro()
 
-        # admin 配置初始化
-        self.adminProfile()
 
     def defineMacro(self):
         pass
 
-    def log(self, log):
-        with open(path.join(log_path,"{log_name}.log".format(log_name=project_name)), "a") as f:
-            logStr = "{project_name} Log At {datetime}: {log}\n".format(project_name=project_name,datetime=str(datetime.datetime.now()),log=str(log))
-            f.write(logStr)
-
-    def adminProfile(self):
-        g7AdmingXmlPath = os.path.join(self.project_path,"workspace/profile/uwsgi/"+django_project_name+"_profile.xml")
-
-        host = "127.0.0.1"
-        port = release_django_port
-        listen = 80
-        pythonpath1 = self.project_path 	# G7Platform
-        pythonpath2 = self.subproject_path
-        pythonpath3 = self.subproject_path+"/main/"+django_project_name+"/"+django_project_name+"/"
-        pythonpath4 = self.subproject_path+"/main/"+django_project_name+"/"
-        pidfile = path.join(nginx_path,"pid/nginx.pid")
-        limit_as = 300
-        daemonize = self.log_path + "/django/django.log"   # logpath
-
-        childrenNodes = {
-            "chdir":django_path,
-            "socket":host+":"+str(port),
-            "listen":str(listen),
-            "master":"true",
-            "pidfile":pidfile,
-            "processes":"8",
-            "pythonpath1":pythonpath1,
-            "pythonpath2":pythonpath2,
-            "pythonpath3":pythonpath3,
-            "pythonpath4":pythonpath4,
-            "module":"wsgi",
-            "profiler":"true",
-            "memory-report":"true",
-            "enable-threads":"true",
-            "logdate":"true",
-            "limit-as":str(limit_as),
-            "daemonize":daemonize,
-            }
-
-        def g7AdminXmlBuilder(nodes={}, rootNodeName="", xmlpath=""):
-
-            doc = Document()
-            rootNode = doc.createElement(rootNodeName)
-            doc.appendChild(rootNode)
-            for keyName in list(nodes.keys()):
-                if "pythonpath" in keyName:
-                    keyNode = doc.createElement("pythonpath")
-                    valueNode = doc.createTextNode(nodes[keyName])
-                    keyNode.appendChild(valueNode)
-                    rootNode.appendChild(keyNode)
-                else:
-                    keyNode = doc.createElement(keyName)
-                    valueNode = doc.createTextNode(nodes[keyName])
-                    keyNode.appendChild(valueNode)
-                    rootNode.appendChild(keyNode)
-
-            f = open(xmlpath,'w')
-            f.write(doc.toprettyxml())
-            f.close()
-
-        g7AdminXmlBuilder(childrenNodes, "uwsgi", g7AdmingXmlPath)

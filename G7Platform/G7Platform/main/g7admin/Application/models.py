@@ -11,6 +11,51 @@ import random
 
 class G7Project(models.Model):
 
+    status_choices = (
+                    (0,_(u"新建")),
+                    (1,_(u"策划中")),
+                    (2,_(u"设计中")),
+                    (3,_(u"开发中")),
+                    (4,_(u"测试中")),
+                    (5,_(u"提审中")),
+                    (6,_(u"审核中")),
+                    (7,_(u"回归中")),
+                    (8,_(u"发布")),
+                   )
+
+    type_choices = (
+        (0,_(u"应用程序")),
+        (1,_(u"客户端框架")),
+        (2,_(u"服务端框架")),
+        (3,_(u"插件")),
+        (4,_(u"开源项目")),
+        (5,_(u"开发工具")),
+    )
+
+    platform_choices = (
+                    (0,_(u"通用")),
+                    (1,_(u"iOS")),
+                    (2,_(u"Android")),
+                    (999,_(u"其他")),
+                   )
+
+    platform = models.IntegerField(verbose_name=_(u"目标平台"),
+                                   default=0,
+                                   choices=platform_choices,
+                                   blank=True)
+
+    product_type = models.IntegerField(choices=type_choices,
+                                  verbose_name=_(u"类型"),
+                                  default=0)
+
+    product_status = models.IntegerField(choices=status_choices,
+                                    verbose_name=_(u"状态"),
+                                    default=0)
+    product_id = models.IntegerField(verbose_name=_(u"产品id"),default=0,blank=False,null=False)
+
+    latest_version = models.CharField(verbose_name=_(u"最新版本"),max_length=200, default="0.0",blank=True,null=True)
+    latest_inner_version = models.IntegerField(verbose_name=_(u"最新内部版本"),default=0,blank=True,null=True)
+    latest_build_version = models.IntegerField(verbose_name=_(u"最新编译版本"),default=0,blank=True,null=True)
 
     name = models.CharField(max_length=150, default="", blank=False,verbose_name=_(u"名称"),unique=True)
     descriptin = models.TextField(verbose_name=_(u"产品简介"),default="",null=True,blank=True)
@@ -24,6 +69,7 @@ class G7Project(models.Model):
                              verbose_name=_(u"拥有人"),
                              related_name='+',
                              db_constraint=False)
+    
     members = models.ManyToManyField(settings.AUTH_USER_MODEL,
                                     verbose_name=_(u"成员"),
                                     related_name='projects',
@@ -34,6 +80,8 @@ class G7Project(models.Model):
                              max_length=100,
                              default="",
                              blank=True,unique=True)
+    bunldeID = models.CharField(max_length=200, default="", blank=False, null=False, verbose_name=_(u"标识符(BundleID)"), unique=True)
+
 
     create_at = models.DateTimeField(verbose_name=_(u"创建时间"), auto_now_add=timezone.now())
     modified_at = models.DateTimeField(verbose_name=_(u"更新时间"), auto_now=timezone.now())
@@ -55,34 +103,6 @@ class G7Project(models.Model):
 
 class G7Application(models.Model):
 
-    app_platform_choices = (
-                    (0,_(u"通用")),
-                    (1,_(u"iOS")),
-                    (2,_(u"Android")),
-                    (999,_(u"其他")),
-                   )
-
-    app_status_choices = (
-                    (0,_(u"新建")),
-                    (1,_(u"策划中")),
-                    (2,_(u"设计中")),
-                    (3,_(u"开发中")),
-                    (4,_(u"测试中")),
-                    (5,_(u"提审中")),
-                    (6,_(u"审核中")),
-                    (7,_(u"回归中")),
-                    (8,_(u"发布")),
-                   )
-
-    app_type_choices = (
-        (0,_(u"应用程序")),
-        (1,_(u"客户端框架")),
-        (2,_(u"服务端框架")),
-        (3,_(u"插件")),
-        (4,_(u"开源项目")),
-        (5,_(u"开发工具")),
-    )
-
     product_type_choices = (
         (0, _(u"未知(ids默认为0)")),
         (1,_(u"iPhone/iTouch版本")),
@@ -90,17 +110,6 @@ class G7Application(models.Model):
         (3,_(u"通用版本，适用iOS系列")),
     )
 
-
-    apptype = models.IntegerField(choices=app_type_choices,
-                                  verbose_name=_(u"类型"),
-                                  default=0)
-    appstatus = models.IntegerField(choices=app_status_choices,
-                                    verbose_name=_(u"状态"),
-                                    default=0)
-    platform = models.IntegerField(verbose_name=_(u"目标平台"),
-                                   default=0,
-                                   choices=app_platform_choices,
-                                   blank=True)
     product_id = models.IntegerField(verbose_name=_(u"产品id"),default=0,blank=False,null=False)
     product_type = models.IntegerField(verbose_name=_(u"产品类型"), choices=product_type_choices, default=0, null=True,blank=True)
     channel = models.IntegerField(verbose_name=_(u"频道"),default=0,blank=False,null=False)
