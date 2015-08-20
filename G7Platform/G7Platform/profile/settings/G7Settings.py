@@ -78,7 +78,6 @@ nginx_g7_conf_path = path.join(nginx_path, project_name.lower())
 
 tornado_log_path = path.join(log_path,"tornado/tornado.log")
 
-
 ########################### 数据库 ###########################
 
 # 数据库命名不能超过14个长度
