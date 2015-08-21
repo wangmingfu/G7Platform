@@ -87,8 +87,8 @@ class G7User(AbstractBaseUser):
     usignature = models.CharField(verbose_name=_(u"用户登陆标识"),max_length=100, default=uuid.uuid4().hex, blank=True)
     nickname = models.CharField(verbose_name=_(u"昵称"),max_length=255, default=uuid.uuid4().hex, blank=True)
     clientid = models.CharField(verbose_name=_(u"客户端id"),max_length=100,default=uuid.uuid4().hex, blank=True)
-    realname = models.CharField(verbose_name=_(u"真实姓名"),max_length=255, default="")
-    job = models.CharField(verbose_name=_(u"职业"), max_length=100, default="")
+    realname = models.CharField(verbose_name=_(u"真实姓名"),max_length=255, default="暂无")
+    job = models.CharField(verbose_name=_(u"职业"), max_length=100, default="无业游民")
     groups = models.ManyToManyField("Account.G7Group", verbose_name=_('群组'),
         blank=True, related_name="members")
 

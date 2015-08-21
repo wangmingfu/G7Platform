@@ -756,3 +756,108 @@ Thu Aug 20 17:14:35 2015 - spawned uWSGI worker 5 (pid: 7230, cores: 1)
 Thu Aug 20 17:14:35 2015 - spawned uWSGI worker 6 (pid: 7231, cores: 1)
 Thu Aug 20 17:14:35 2015 - spawned uWSGI worker 7 (pid: 7232, cores: 1)
 Thu Aug 20 17:14:35 2015 - spawned uWSGI worker 8 (pid: 7233, cores: 1)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22736896 bytes/21MB} [pid: 7233|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 958 bytes} [Thu Aug 20 17:14:58 2015] GET /admin/Account/g7user/3/ => generated 13195 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584162304 bytes/2464MB} {rss usage: 17108992 bytes/16MB} [pid: 7231|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 830 bytes} [Thu Aug 20 17:14:59 2015] GET /admin/jsi18n/ => generated 6776 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22507520 bytes/21MB} [pid: 7232|app: 0|req: 1/3] 127.0.0.1 () {52 vars in 1229 bytes} [Thu Aug 20 17:15:01 2015] POST /admin/Account/g7user/add/ => generated 6086 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22855680 bytes/21MB} [pid: 7233|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 801 bytes} [Thu Aug 20 17:15:01 2015] GET /admin/jsi18n/ => generated 6776 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 23334912 bytes/22MB} [pid: 7233|app: 0|req: 3/5] 127.0.0.1 () {50 vars in 1174 bytes} [Thu Aug 20 17:15:11 2015] POST /admin/Account/g7user/add/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 8 headers in 551 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 29118464 bytes/27MB} [pid: 7233|app: 0|req: 4/6] 127.0.0.1 () {44 vars in 1209 bytes} [Thu Aug 20 17:15:11 2015] GET /admin/Account/g7user/4/ => generated 13412 bytes in 75 msecs (HTTP/1.1 200) 8 headers in 418 bytes (2 switches on core 0)
+{address space usage: 2593337344 bytes/2473MB} {rss usage: 29126656 bytes/27MB} [pid: 7233|app: 0|req: 5/7] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:15:11 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29315072 bytes/27MB} [pid: 7233|app: 0|req: 6/8] 127.0.0.1 () {44 vars in 958 bytes} [Thu Aug 20 17:15:52 2015] GET /admin/Account/g7user/4/ => generated 13236 bytes in 50 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29331456 bytes/27MB} [pid: 7233|app: 0|req: 7/9] 127.0.0.1 () {42 vars in 830 bytes} [Thu Aug 20 17:15:52 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22458368 bytes/21MB} [pid: 7231|app: 0|req: 2/10] 127.0.0.1 () {52 vars in 1229 bytes} [Thu Aug 20 17:15:55 2015] POST /admin/Account/g7user/add/ => generated 6086 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22597632 bytes/21MB} [pid: 7232|app: 0|req: 2/11] 127.0.0.1 () {40 vars in 801 bytes} [Thu Aug 20 17:15:55 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 22736896 bytes/21MB} [pid: 7231|app: 0|req: 3/12] 127.0.0.1 () {50 vars in 1174 bytes} [Thu Aug 20 17:16:01 2015] POST /admin/Account/g7user/add/ => generated 0 bytes in 75 msecs (HTTP/1.1 302) 8 headers in 551 bytes (2 switches on core 0)
+{address space usage: 2585210880 bytes/2465MB} {rss usage: 29130752 bytes/27MB} [pid: 7231|app: 0|req: 4/13] 127.0.0.1 () {44 vars in 1209 bytes} [Thu Aug 20 17:16:01 2015] GET /admin/Account/g7user/5/ => generated 13413 bytes in 74 msecs (HTTP/1.1 200) 8 headers in 418 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29335552 bytes/27MB} [pid: 7233|app: 0|req: 8/14] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:16:01 2015] GET /admin/jsi18n/ => generated 6776 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+Thu Aug 20 17:16:12 2015 - *** Starting uWSGI 2.0.10 (64bit) on [Thu Aug 20 17:16:12 2015] ***
+Thu Aug 20 17:16:12 2015 - compiled with version: 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.49) on 17 June 2015 23:39:43
+Thu Aug 20 17:16:12 2015 - os: Darwin-14.4.0 Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64
+Thu Aug 20 17:16:12 2015 - nodename: yuyangdeMacBook-Pro.local
+Thu Aug 20 17:16:12 2015 - machine: x86_64
+Thu Aug 20 17:16:12 2015 - clock source: unix
+Thu Aug 20 17:16:12 2015 - pcre jit disabled
+Thu Aug 20 17:16:12 2015 - detected number of CPU cores: 8
+Thu Aug 20 17:16:12 2015 - current working directory: /Users/yuyang/workspace/git/G7Platform/G7Platform
+Thu Aug 20 17:16:12 2015 - writing pidfile to /Users/yuyang/workspace/git/G7Platform/G7Platform/workspace/profile/nginx/pid/nginx.pid
+Thu Aug 20 17:16:12 2015 - detected binary path: /usr/local/bin/uwsgi
+Thu Aug 20 17:16:12 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin
+Thu Aug 20 17:16:12 2015 - your processes number limit is 709
+Thu Aug 20 17:16:12 2015 - limiting address space of processes...
+Thu Aug 20 17:16:12 2015 - your process address space limit is 314572800 bytes (300 MB)
+Thu Aug 20 17:16:12 2015 - your memory page size is 4096 bytes
+Thu Aug 20 17:16:12 2015 - detected max file descriptor number: 256
+Thu Aug 20 17:16:12 2015 - lock engine: OSX spinlocks
+Thu Aug 20 17:16:12 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Thu Aug 20 17:16:12 2015 - uwsgi socket 0 bound to TCP address 127.0.0.1:8882 fd 3
+Thu Aug 20 17:16:12 2015 - Python version: 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Thu Aug 20 17:16:12 2015 - Python main interpreter initialized at 0x7f81bbc0d0d0
+Thu Aug 20 17:16:12 2015 - python threads support enabled
+Thu Aug 20 17:16:12 2015 - your server socket listen backlog is limited to 80 connections
+Thu Aug 20 17:16:12 2015 - your mercy for graceful operations on workers is 60 seconds
+Thu Aug 20 17:16:12 2015 - mapped 654840 bytes (639 KB) for 8 cores
+Thu Aug 20 17:16:12 2015 - *** Operational MODE: preforking ***
+Thu Aug 20 17:16:12 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/ to pythonpath.
+Thu Aug 20 17:16:12 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/ to pythonpath.
+Thu Aug 20 17:16:12 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin/g7admin/ to pythonpath.
+Thu Aug 20 17:16:12 2015 - added /Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin/ to pythonpath.
+Thu Aug 20 17:16:12 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f81bbc0d0d0 pid: 7425 (default app)
+Thu Aug 20 17:16:12 2015 - *** uWSGI is running in multiple interpreter mode ***
+Thu Aug 20 17:16:12 2015 - spawned uWSGI master process (pid: 7425)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 1 (pid: 7431, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 2 (pid: 7432, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 3 (pid: 7433, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 4 (pid: 7434, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 5 (pid: 7435, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 6 (pid: 7436, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 7 (pid: 7437, cores: 1)
+Thu Aug 20 17:16:12 2015 - spawned uWSGI worker 8 (pid: 7438, cores: 1)
+{address space usage: 2584424448 bytes/2464MB} {rss usage: 20434944 bytes/19MB} [pid: 7438|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1174 bytes} [Thu Aug 20 17:16:20 2015] POST /admin/Account/g7user/add/ => generated 0 bytes in 123 msecs (HTTP/1.1 302) 8 headers in 554 bytes (1 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 23285760 bytes/22MB} [pid: 7438|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 1212 bytes} [Thu Aug 20 17:16:20 2015] GET /admin/Account/g7user/6/ => generated 13441 bytes in 59 msecs (HTTP/1.1 200) 8 headers in 418 bytes (2 switches on core 0)
+{address space usage: 2593337344 bytes/2473MB} {rss usage: 23379968 bytes/22MB} [pid: 7438|app: 0|req: 3/3] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:16:20 2015] GET /admin/jsi18n/ => generated 6776 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2592813056 bytes/2472MB} {rss usage: 21028864 bytes/20MB} [pid: 7436|app: 0|req: 1/4] 127.0.0.1 () {50 vars in 1170 bytes} [Thu Aug 20 17:16:25 2015] POST /admin/Account/g7user/6/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 8 headers in 468 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29196288 bytes/27MB} [pid: 7438|app: 0|req: 4/5] 127.0.0.1 () {44 vars in 1122 bytes} [Thu Aug 20 17:16:25 2015] GET /admin/Account/g7user/ => generated 7814 bytes in 58 msecs (HTTP/1.1 200) 8 headers in 418 bytes (1 switches on core 0)
+{address space usage: 2592550912 bytes/2472MB} {rss usage: 17055744 bytes/16MB} [pid: 7434|app: 0|req: 1/6] 127.0.0.1 () {40 vars in 797 bytes} [Thu Aug 20 17:16:25 2015] GET /admin/jsi18n/ => generated 6776 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2584686592 bytes/2464MB} {rss usage: 21884928 bytes/20MB} [pid: 7437|app: 0|req: 1/7] 127.0.0.1 () {50 vars in 1092 bytes} [Thu Aug 20 17:16:31 2015] POST /admin/Account/g7user/ => generated 3068 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29200384 bytes/27MB} [pid: 7438|app: 0|req: 5/8] 127.0.0.1 () {50 vars in 1092 bytes} [Thu Aug 20 17:16:33 2015] POST /admin/Account/g7user/ => generated 0 bytes in 26 msecs (HTTP/1.1 302) 8 headers in 453 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29306880 bytes/27MB} [pid: 7438|app: 0|req: 6/9] 127.0.0.1 () {44 vars in 1105 bytes} [Thu Aug 20 17:16:33 2015] GET /admin/Account/g7user/ => generated 6267 bytes in 28 msecs (HTTP/1.1 200) 8 headers in 418 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29335552 bytes/27MB} [pid: 7438|app: 0|req: 7/10] 127.0.0.1 () {40 vars in 797 bytes} [Thu Aug 20 17:16:33 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2593337344 bytes/2473MB} {rss usage: 23404544 bytes/22MB} [pid: 7436|app: 0|req: 2/11] 127.0.0.1 () {44 vars in 978 bytes} [Thu Aug 20 17:16:34 2015] GET /admin/Account/g7user/2/ => generated 13187 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584686592 bytes/2464MB} {rss usage: 22020096 bytes/21MB} [pid: 7437|app: 0|req: 2/12] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:16:34 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29401088 bytes/28MB} [pid: 7438|app: 0|req: 8/13] 127.0.0.1 () {42 vars in 919 bytes} [Thu Aug 20 17:16:42 2015] GET /admin/Account/g7user/ => generated 6147 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 23392256 bytes/22MB} [pid: 7437|app: 0|req: 3/14] 127.0.0.1 () {44 vars in 978 bytes} [Thu Aug 20 17:16:43 2015] GET /admin/Account/g7user/1/ => generated 13158 bytes in 55 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29425664 bytes/28MB} [pid: 7438|app: 0|req: 9/15] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:16:43 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 29097984 bytes/27MB} [pid: 7437|app: 0|req: 4/16] 127.0.0.1 () {44 vars in 978 bytes} [Thu Aug 20 17:16:54 2015] GET /admin/Account/g7user/2/ => generated 13187 bytes in 68 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29425664 bytes/28MB} [pid: 7438|app: 0|req: 10/17] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:16:54 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2584424448 bytes/2464MB} {rss usage: 20955136 bytes/19MB} [pid: 7435|app: 0|req: 1/18] 127.0.0.1 () {50 vars in 1170 bytes} [Thu Aug 20 17:16:58 2015] POST /admin/Account/g7user/2/ => generated 0 bytes in 65 msecs (HTTP/1.1 302) 8 headers in 461 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29503488 bytes/28MB} [pid: 7438|app: 0|req: 11/19] 127.0.0.1 () {44 vars in 1115 bytes} [Thu Aug 20 17:16:58 2015] GET /admin/Account/g7user/ => generated 6283 bytes in 33 msecs (HTTP/1.1 200) 8 headers in 418 bytes (2 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29523968 bytes/28MB} [pid: 7438|app: 0|req: 12/20] 127.0.0.1 () {40 vars in 797 bytes} [Thu Aug 20 17:16:58 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 23416832 bytes/22MB} [pid: 7435|app: 0|req: 2/21] 127.0.0.1 () {42 vars in 923 bytes} [Thu Aug 20 17:17:00 2015] GET /admin/Account/g7user/2/ => generated 13228 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29523968 bytes/28MB} [pid: 7438|app: 0|req: 13/22] 127.0.0.1 () {40 vars in 799 bytes} [Thu Aug 20 17:17:01 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29544448 bytes/28MB} [pid: 7438|app: 0|req: 14/23] 127.0.0.1 () {42 vars in 921 bytes} [Thu Aug 20 17:17:32 2015] GET /admin/Account/g7user/ => generated 6147 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2584948736 bytes/2465MB} {rss usage: 29126656 bytes/27MB} [pid: 7437|app: 0|req: 5/24] 127.0.0.1 () {44 vars in 960 bytes} [Thu Aug 20 17:17:34 2015] GET /admin/Account/ => generated 2842 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29548544 bytes/28MB} [pid: 7438|app: 0|req: 15/25] 127.0.0.1 () {44 vars in 937 bytes} [Thu Aug 20 17:17:37 2015] GET /admin/ => generated 6869 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 214 bytes (2 switches on core 0)
+{address space usage: 2585210880 bytes/2465MB} {rss usage: 29360128 bytes/28MB} [pid: 7437|app: 0|req: 6/26] 127.0.0.1 () {44 vars in 973 bytes} [Thu Aug 20 17:17:38 2015] GET /admin/Application/g7project/ => generated 5262 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 336 bytes (2 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29368320 bytes/28MB} [pid: 7437|app: 0|req: 7/27] 127.0.0.1 () {40 vars in 804 bytes} [Thu Aug 20 17:17:38 2015] GET /admin/jsi18n/ => generated 6776 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29556736 bytes/28MB} [pid: 7437|app: 0|req: 8/28] 127.0.0.1 () {44 vars in 999 bytes} [Thu Aug 20 17:17:38 2015] GET /admin/Application/g7project/1/ => generated 14896 bytes in 58 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29548544 bytes/28MB} [pid: 7438|app: 0|req: 16/29] 127.0.0.1 () {40 vars in 806 bytes} [Thu Aug 20 17:17:38 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29347840 bytes/27MB} [pid: 7436|app: 0|req: 3/30] 127.0.0.1 () {44 vars in 999 bytes} [Thu Aug 20 17:21:11 2015] GET /admin/Application/g7project/1/ => generated 14896 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29569024 bytes/28MB} [pid: 7438|app: 0|req: 17/31] 127.0.0.1 () {40 vars in 806 bytes} [Thu Aug 20 17:21:11 2015] GET /admin/jsi18n/ => generated 6776 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29618176 bytes/28MB} [pid: 7438|app: 0|req: 18/32] 127.0.0.1 () {44 vars in 973 bytes} [Thu Aug 20 17:21:28 2015] GET /admin/Application/g7project/ => generated 5262 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29622272 bytes/28MB} [pid: 7438|app: 0|req: 19/33] 127.0.0.1 () {40 vars in 804 bytes} [Thu Aug 20 17:21:28 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+{address space usage: 2594648064 bytes/2474MB} {rss usage: 29888512 bytes/28MB} [pid: 7437|app: 0|req: 9/34] 127.0.0.1 () {44 vars in 999 bytes} [Thu Aug 20 17:21:28 2015] GET /admin/Application/g7project/1/ => generated 14896 bytes in 67 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+{address space usage: 2593599488 bytes/2473MB} {rss usage: 29626368 bytes/28MB} [pid: 7438|app: 0|req: 20/35] 127.0.0.1 () {40 vars in 806 bytes} [Thu Aug 20 17:21:29 2015] GET /admin/jsi18n/ => generated 6776 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Thu Aug 20 17:24:13 2015 - ...brutally killing workers...
+Thu Aug 20 17:24:14 2015 - worker 8 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 7 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 6 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 5 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 4 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 3 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 2 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - worker 1 buried after 1 seconds
+Thu Aug 20 17:24:14 2015 - binary reloading uWSGI...
+Thu Aug 20 17:24:14 2015 - chdir() to /Users/yuyang/workspace/git/G7Platform/G7Platform
+Thu Aug 20 17:24:14 2015 - closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+Thu Aug 20 17:24:14 2015 - found fd 3 mapped to socket 0 (127.0.0.1:8882)
+Thu Aug 20 17:24:14 2015 - running /usr/local/bin/uwsgi
