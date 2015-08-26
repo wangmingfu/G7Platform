@@ -58,7 +58,7 @@ if __name__ == "__main__":
             'file': open(ipa_file_path, 'rb'),
             "product_name":product_name,
             "uid":"8a0a7d4a81cb46f8b70abe9c000b975d",
-            "installPassword":"gao7.com",
+            "installPassword":"abc",
         }
 
         coded_params, boundary = _encode_multipart(params)
