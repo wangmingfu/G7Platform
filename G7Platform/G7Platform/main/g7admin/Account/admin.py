@@ -164,15 +164,17 @@ class G7UserAdmin(UserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ('username', 'realname','email', 'is_admin')
+    list_display = ('username', 'realname','email', 'is_admin',)
     list_filter = ('is_admin',)
     ordering = ('id',)
 
     fieldsets = (
         (None, {'fields': ('username', 'password',"description")}),
-        ('用户资料', {'fields': ("job",'email','sex','thumb','age','userid','usignature','nickname','clientid','realname',"mobile")}),
+        ('用户资料', {'fields': ("job",'sex','thumb','age','userid','usignature','nickname','clientid','realname',"mobile")}),
         ('小组', {'fields': ('groups',)}),
-        ('权限', {'fields': ('is_admin',)}),
+        ("邮件设置", {"fields": ( "email", "mail_pwd",)}),
+        ("蒲公英", {"fields": ("pgyer_ukey", "pgyer_apiKey")}),
+        ('权限', {'fields': ('is_admin', 'email_vip')}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
     # overrides get_fieldsets to use this attribute when creating a user.

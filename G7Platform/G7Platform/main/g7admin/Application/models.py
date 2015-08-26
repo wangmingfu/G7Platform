@@ -44,31 +44,40 @@ class G7Project(models.Model):
                                    choices=platform_choices,
                                    blank=True)
 
-    product_type = models.IntegerField(choices=type_choices,
+    project_type = models.IntegerField(choices=type_choices,
                                   verbose_name=_(u"类型"),
                                   default=0)
 
-    product_status = models.IntegerField(choices=status_choices,
+    project_status = models.IntegerField(choices=status_choices,
                                     verbose_name=_(u"状态"),
                                     default=0)
-    product_id = models.IntegerField(verbose_name=_(u"产品id"),default=0,blank=False,null=False)
+    project_id = models.IntegerField(verbose_name=_(u"产品id"),default=0,blank=False,null=False)
 
     latest_version = models.CharField(verbose_name=_(u"最新版本"),max_length=200, default="0.0",blank=True,null=True)
     latest_inner_version = models.IntegerField(verbose_name=_(u"最新内部版本"),default=0,blank=True,null=True)
-    latest_build_version = models.IntegerField(verbose_name=_(u"最新编译版本"),default=0,blank=True,null=True)
+    latest_build_version = models.CharField(verbose_name=_(u"最新编译版本"),
+        default=0,
+        blank=True,
+        null=True,
+        max_length=200)
 
-    name = models.CharField(max_length=150, default="", blank=False,verbose_name=_(u"名称"),unique=True)
+    name = models.CharField(max_length=150, default="", blank=False,verbose_name=_(u"名称"))
     descriptin = models.TextField(verbose_name=_(u"产品简介"),default="",null=True,blank=True)
     applications = models.ManyToManyField("Application.G7Application",
                                      verbose_name=_(u"应用"),
                                      blank=True,
                                      related_name="projects")
 
-    icon = models.ImageField(verbose_name=_(u"图标"), upload_to="project/icon/", default=settings.MEDIA_URL+"project/icon/default_icon.png")
+    icon = models.ImageField(verbose_name=_(u"图标"), 
+        upload_to="project/icon/", 
+        default="project/icon/default_icon.png")
+
     owner = models.ForeignKey(settings.AUTH_USER_MODEL,
                              verbose_name=_(u"拥有人"),
                              related_name='+',
-                             db_constraint=False)
+                             db_constraint=False,
+                             null=True,
+                             blank=True)
     
     members = models.ManyToManyField(settings.AUTH_USER_MODEL,
                                     verbose_name=_(u"成员"),
@@ -80,8 +89,13 @@ class G7Project(models.Model):
                              max_length=100,
                              default="",
                              blank=True,unique=True)
-    bunldeID = models.CharField(max_length=200, default="", blank=False, null=False, verbose_name=_(u"标识符(BundleID)"), unique=True)
 
+    bundleID = models.CharField(max_length=200, 
+        default="", 
+        blank=False, 
+        null=False, 
+        verbose_name=_(u"标识符(BundleID)"), 
+        unique=True)
 
     create_at = models.DateTimeField(verbose_name=_(u"创建时间"), auto_now_add=timezone.now())
     modified_at = models.DateTimeField(verbose_name=_(u"更新时间"), auto_now=timezone.now())
@@ -121,30 +135,13 @@ class G7Application(models.Model):
                                  blank=True,unique=True)
     file = models.FileField(upload_to="application/package", verbose_name=_(u"文件"),blank=True,null=True)
     version = models.CharField(blank=True, default="0.0", verbose_name=_(u"版本"), max_length=150)
-    icon = models.ImageField(verbose_name=_(u"图标"), upload_to="application/icon/", default=settings.MEDIA_URL+"application/icon/default_icon.png", blank=True)
+    icon = models.ImageField(verbose_name=_(u"图标"), upload_to="application/icon/", default="application/icon/default_icon.png", blank=True)
     create_at = models.DateTimeField(verbose_name=_(u"创建时间"),  auto_now_add=timezone.now())
     modified_at = models.DateTimeField(verbose_name=_(u"更新时间"), auto_now=timezone.now())
-    identifier = models.CharField(max_length=200, default="", blank=True, null=True, verbose_name=_(u"标识符(BundleID)"))
+    bundleID = models.CharField(max_length=200, default="", blank=True, null=True, verbose_name=_(u"标识符(BundleID)"))
     description = models.TextField(verbose_name=_(u"说明"), blank=True, null=True, default="")
-    # build_version = models.IntegerField(verbose_name=_(u"编译版本"),default=0)
+    build_version = models.CharField(verbose_name=_(u"编译版本"),default="0", max_length=200)
     frameworks = models.ManyToManyField("Application.G7Application",verbose_name=_(u"使用到的框架"), blank=True, related_name="applications")
-
-    def build_version(self):
-        if self.id != None:
-            if self.product_id != None and self.channel != None and self.inner_version != None:
-                applicationList = G7Application.objects.filter(product_id=self.product_id,channel=self.channel,inner_version=self.inner_version).order_by("create_at")
-                if  len(applicationList) == 0:
-                    return 1
-                else:
-                    for application in applicationList:
-                        if application.appid == self.appid:
-                            return list(applicationList).index(application)+1
-
-                    return 1
-        else:
-            return 1
-    build_version.short_description = _('编译版本')
-    build_version.allow_tags = True
 
     def icon_preview(self):
         return '<img src="{icon_url}" width="40px" height="40px" />'.format(icon_url=self.icon.url)
@@ -159,4 +156,4 @@ class G7Application(models.Model):
 
     def __str__(self):
         if self.modified_at != None:
-            return str(self.id)+". "+self.name+"_build{time}-{build_version}".format(time=self.modified_at.strftime("%Y%m%d%H%M%S"),build_version=self.build_version())
+            return str(self.id)+". "+self.name+"_Build{build_version} At ({time})".format(time=self.modified_at.replace(tzinfo=datetime.timezone.utc).astimezone(tz=None).strftime("%Y-%m-%d %H:%M:%S"),build_version=self.build_version)

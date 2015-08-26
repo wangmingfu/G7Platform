@@ -87,14 +87,20 @@ class G7User(AbstractBaseUser):
     usignature = models.CharField(verbose_name=_(u"用户登陆标识"),max_length=100, default=uuid.uuid4().hex, blank=True)
     nickname = models.CharField(verbose_name=_(u"昵称"),max_length=255, default=uuid.uuid4().hex, blank=True)
     clientid = models.CharField(verbose_name=_(u"客户端id"),max_length=100,default=uuid.uuid4().hex, blank=True)
-    realname = models.CharField(verbose_name=_(u"真实姓名"),max_length=255, default="暂无")
+    realname = models.CharField(verbose_name=_(u"真实姓名"),max_length=255, default="", blank=True, null=True)
     job = models.CharField(verbose_name=_(u"职业"), max_length=100, default="无业游民")
     groups = models.ManyToManyField("Account.G7Group", verbose_name=_('群组'),
         blank=True, related_name="members")
 
     mobile = models.CharField(verbose_name=_(u"电话号码"), max_length=50, default="",null=True,blank=True)
     description = models.TextField(verbose_name=_(u"简介"), default="",null=True,blank=True)
+    email_vip = models.BooleanField(verbose_name=_(u"VIP邮件接收者"), default=False)
 
+    # mail_host = models.CharField(verbose_name=_(u"邮件发送主机"), default="", max_length=200, null=True, blank=True)
+    mail_pwd = models.CharField(verbose_name=_(u"邮箱密码"), default="", max_length=200, null=True, blank=True)
+
+    pgyer_ukey = models.CharField(verbose_name=_(u"蒲公英uKey"), default="", max_length=200, null=True, blank=True)
+    pgyer_apiKey = models.CharField(verbose_name=_(u"蒲公英api_key"), default="", max_length=200, null=True, blank=True)
 
     def get_full_name(self):
         # The user is identified by their email address

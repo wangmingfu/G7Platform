@@ -44,10 +44,13 @@ class G7ReqHandler(tornado.web.RequestHandler):
             return {}
 
     def responseWrite(self,code=0, message="", data={}):
+        self.write(G7ReqHandler.responseDataText(code, message, data))
+
+    def responseDataText(code=0, message="", data={}):
 
         responseData = G7ResultAsistance.resultErrorDataWrapperToJson(code,data)
         if code == 0:
             responseData = G7ResultAsistance.resultSuccessDataWrapperToJson(message, data)
 
         responseDataText = json.dumps(responseData)
-        self.write(responseDataText)
+        return responseDataText

@@ -16,7 +16,6 @@
 import sys
 import time
 import urllib2
-import time
 import json
 import mimetypes
 import os
@@ -25,7 +24,6 @@ from email.MIMEText import MIMEText
 from email.MIMEMultipart import MIMEMultipart
 from hurry.filesize import size
 
-import json
 
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -40,18 +38,7 @@ sys.setdefaultencoding("utf-8")
 
 # 运行时环境变量字典
 environsDict = os.environ
-#项目名称，用在 拼接 tomcat 文件地址
-project_name = str(sys.argv[1])
-#产品名称
-product_name = str(sys.argv[2])
-#项目构建版本
-project_version = str(sys.argv[3])
-#获取ipa地址
-ipa_file_path = str(sys.argv[4])
-#构建版本号
-build_version = str(sys.argv[5])
-#邮件接受者
-mail_receiver_type = int(sys.argv[6])
+
 
     # ,'663971596@qq.com','loolingc@gmail.com','358104996@qq.com','pluwen@gmail.com','245838185@qq.com','lengyao@foxmail.com','542276632@qq.com','shikaimin@qq.com'
 
@@ -77,25 +64,14 @@ mail_receiver_WeiXin = { '王明福':'2851728838@qq.com', '陈燕华' : '2851728
 
 mail_receiver = list(mail_receiver_vip.values())
 
-if mail_receiver_type == 1:  # 壁纸
+if mail_receiver_type == 1:    # 壁纸
     mail_receiver += list(mail_receiver_wallpaper.values());
-elif mail_receiver_type == 2:  #助手
+elif mail_receiver_type == 2:  # 助手
     mail_receiver += list(mail_receiver_tools.values());
-elif mail_receiver_type == 3:  #搞趣网
+elif mail_receiver_type == 3:  # 搞趣网
     mail_receiver = list(mail_receiver_Gao7.values());
-elif mail_receiver_type == 4:  #微信精选
+elif mail_receiver_type == 4:  # 微信精选
     mail_receiver = list(mail_receiver_WeiXin.values());
-
-#蒲公英应用上传地址
-url = 'http://www.pgyer.com/apiv1/app/upload'
-#蒲公英提供的 用户Key
-uKey = '10bfec8a0ad76ec4513d0a1a911c0070'
-#上传文件的文件名（这个可随便取，但一定要以 ipa 结尾）
-file_name = project_name + '.ipa'
-#蒲公英提供的 API Key
-_api_key = '7aa43e0355b94a671f5ae11cecea6972'
-#安装应用时需要输入的密码，这个可不填
-installPassword = 'gao7.com'
 
 #ipa 文件在 tomcat 服务器上的地址
 # ipa_file_tomcat_http_url = 'http://localhost/' + project_name + '/static/' + jenkins_build_number + '/' + jenkins_build_number + '.ipa'
@@ -119,15 +95,15 @@ def _encode_multipart(params_dict):
     data.append('--%s--\r\n' % boundary)
     return '\r\n'.join(data), boundary
 
-
 #处理 蒲公英 上传结果
 def handle_resule(result):
+    
     json_result = json.loads(result)
     if json_result['code'] is 0:
         send_Email(json_result)
 
 #发送邮件
-def send_Email(json_result):
+def send_Email(json_result, mail_receiver):
 
     appName = json_result['data']['appName']
     appKey = json_result['data']['appKey']
@@ -139,8 +115,6 @@ def send_Email(json_result):
     appIdentifier = json_result['data']['appIdentifier']
     appUpdated = json_result['data']['appUpdated']
     appCreated = json_result['data']['appCreated']
-
-
 
     #根据不同邮箱配置 host，user，和pwd
     mail_host = 'smtp.vip.163.com'
@@ -216,26 +190,54 @@ def send_Email(json_result):
 
 #############################################################
 #请求参数字典
-params = {
-    'uKey': uKey,
-    '_api_key': _api_key,
-    'file': open(ipa_file_path, 'rb'),
-    'publishRange': '2',
-    'password': installPassword
 
-}
+def uploadToPgyer(url, uKey, api_key, ipa_file_path, installPassword):
+    params = {
+        'uKey': uKey,
+        '_api_key': api_key,
+        'file': open(ipa_file_path, 'rb'),
+        'publishRange': '2',
+        'password': installPassword
+    }
 
-coded_params, boundary = _encode_multipart(params)
-req = urllib2.Request(url, coded_params.encode('ISO-8859-1'))
-req.add_header('Content-Type', 'multipart/form-data; boundary=%s' % boundary)
-try:
+    coded_params, boundary = _encode_multipart(params)
+    req = urllib2.Request(url, coded_params.encode('ISO-8859-1'))
+    req.add_header('Content-Type', 'multipart/form-data; boundary=%s' % boundary)
+    try:
+        resp = urllib2.urlopen(req)
+        body = resp.read().decode('utf-8')
+        handle_resule(body)
 
-    resp = urllib2.urlopen(req)
-    body = resp.read().decode('utf-8')
-    handle_resule(body)
+    except urllib2.HTTPError as e:
+        print(e.fp.read())
 
-except urllib2.HTTPError as e:
-    print(e.fp.read())
+if __name__ == "__main__":
+
+    #项目名称，用在 拼接 tomcat 文件地址
+    project_name = str(sys.argv[1])
+    #产品名称
+    product_name = str(sys.argv[2])
+    #项目构建版本
+    project_version = str(sys.argv[3])
+    #获取ipa地址
+    ipa_file_path = str(sys.argv[4])
+    #构建版本号
+    build_version = str(sys.argv[5])
+    #邮件接受者
+    mail_receiver_type = int(sys.argv[6])
+
+    #蒲公英应用上传地址
+    url = 'http://www.pgyer.com/apiv1/app/upload'
+    #蒲公英提供的 用户Key
+    uKey = '10bfec8a0ad76ec4513d0a1a911c0070'
+    #上传文件的文件名（这个可随便取，但一定要以 ipa 结尾）
+    file_name = project_name + '.ipa'
+    #蒲公英提供的 API Key
+    _api_key = '7aa43e0355b94a671f5ae11cecea6972'
+    #安装应用时需要输入的密码，这个可不填
+    installPassword = 'gao7.com'
+
+    uploadToPgyer(url, uKey, _api_key, ipa_file_path, installPassword)
 
 
 

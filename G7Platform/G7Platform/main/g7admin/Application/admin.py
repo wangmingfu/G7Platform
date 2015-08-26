@@ -27,8 +27,8 @@ class G7ProjectAdmin(admin.ModelAdmin):
     form = G7ProjectForm
     fieldsets = (
         (None, {'fields': ('name', "descriptin","owner","icon")}),
-        ('状态', {'fields': ("product_status",)}),
-        ('基本信息', {'fields': ("platform","bunldeID","product_id","product_type","latest_version","latest_inner_version","latest_build_version")}),
+        ('状态', {'fields': ("project_status",)}),
+        ('基本信息', {'fields': ("platform","bundleID","project_id","project_type","latest_version","latest_inner_version","latest_build_version")}),
         ('应用产品', {'fields': ("applications","identifier")}),
         ('成员', {'fields': ("members",)}),
     )
@@ -36,7 +36,7 @@ class G7ProjectAdmin(admin.ModelAdmin):
     # overrides get_fieldsets to use this attribute when creating a user.
     add_fieldsets = (
         (None, {'fields': ('name',"owner","icon")}),
-        ('基本信息', {'fields': ("platform","bunldeID","product_id","product_type","latest_version","latest_inner_version","latest_build_version")}),
+        ('基本信息', {'fields': ("platform","bundleID","project_id","project_type","latest_version","latest_inner_version","latest_build_version")}),
         ('应用产品', {'fields': ('applications',)}),
         ('项目成员', {'fields': ('members',)}),
     )
@@ -80,10 +80,10 @@ class G7ApplicationForm(forms.ModelForm):
             self.fields['projects'].queryset = G7Project.objects.all()
 
             self.fields["frameworks"].initial = self.instance.frameworks.all()
-            self.fields["frameworks"].queryset = G7Application.objects.filter(Q(apptype=1) | Q(apptype=2) | Q(apptype=4))
+            self.fields["frameworks"].queryset = G7Application.objects.filter(Q(product_type=1) | Q(product_type=2) | Q(product_type=4))
             self.fields['frameworks'].widget = RelatedFieldWidgetWrapper(
                                                 FilteredSelectMultiple(_(u'项目'),False),
-                                                G7Application._meta.get_field('applications').rel,
+                                                G7Application._meta.get_field('frameworks').rel,
                                                 admin.site)
 
 
@@ -117,14 +117,14 @@ class G7ApplicationAdmin(admin.ModelAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('name',"frameworks", "inner_version", "icon", "product_type",  "version",'identifier','projects')}
+            'fields': ('name',"frameworks", "inner_version", "icon", "product_type",  "version",'bundleID','projects')}
         )
     )
 
     fieldsets = (
         (_(u"简介"), {'fields': ("name", "product_id", "inner_version", "channel", "product_type", "version", "icon", "build_version")}),
         (_(u"说明"), {'fields': ( "description", )}),
-        (_(u"应用包"), {'fields': ("file", "identifier", "appid" ,)}),
+        (_(u"应用包"), {'fields': ("file", "bundleID", "appid" ,)}),
         (_(u"使用到的框架"), {"fields":("frameworks",)}),
         (_(u"选择产品"), {'fields': ("projects",)}),
     )

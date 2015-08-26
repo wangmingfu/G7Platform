@@ -33,19 +33,19 @@ function pythoninitial() {
 		reallink=$(readlink /usr/local/bin/python3.4);
 	fi
 
-	sudo rm -rf /usr/local/bin/python;
-	sudo rm -rf /usr/bin/python;
-	sudo ln -sv $reallink /usr/local/bin/python;
-	sudo ln -sv $reallink /usr/bin/python;
+	# sudo rm -rf /usr/local/bin/python;
+	# sudo rm -rf /usr/bin/python;
+	# sudo ln -sv $reallink /usr/local/bin/python;
+	# sudo ln -sv $reallink /usr/bin/python;
 	sudo ln -sv $reallink /usr/local/bin/python3;
 	sudo ln -sv $reallink /usr/bin/python3;
-	if 	[ -f /usr/bin/python2.7 ]
-	then
-		sudo ln -sv /usr/bin/python2.7 /usr/local/bin/python2;
-	fi
-	sudo rm -rf /usr/bin/easy_install;
-	sudo ln -sv /usr/local/bin/easy_install-3.4 /usr/bin/easy_install;
-	sudo ln -sv /usr/local/bin/easy_install-2.7 /usr/bin/easy_install2;
+	# if 	[ -f /usr/bin/python2.7 ]
+	# then
+	# 	sudo ln -sv /usr/bin/python2.7 /usr/local/bin/python2;
+	# fi
+	# sudo rm -rf /usr/bin/easy_install;
+	sudo ln -sv /usr/local/bin/easy_install-3.4 /usr/bin/easy_install3;
+	# sudo ln -sv /usr/local/bin/easy_install-2.7 /usr/bin/easy_install2;
 }
 
 if [ $debug -ne 0 ]
@@ -71,7 +71,7 @@ then
 		$osinstaller wget;
 	fi
 
-	defaultPyVersion=`python -V 2>&1|awk '{print $2}'|awk -F '.' '{print $1}'` 1>/dev/null 2>/dev/null;
+	defaultPyVersion=`python3 -V 2>&1|awk '{print $2}'|awk -F '.' '{print $1}'` 1>/dev/null 2>/dev/null;
 	if [[ $defaultPyVersion != *[^0-9]* ]]&&[[ $defaultPyVersion != 0* ]]; then
 		if [ $defaultPyVersion -ne 3 ]; then
 			pythoninitial;
@@ -86,7 +86,7 @@ then
 		$osinstaller mysql;
 		sudo chown -R mysql /usr/local/var/mysql;
 	fi
-
+	
 	nginx -v 2>/dev/null 1>/dev/null;
 	if [ $? -ne 0 ]
 	then
@@ -112,12 +112,12 @@ then
 	pip -V 1>/dev/null 2>/dev/null;
 	if [ $? -ne 0 ]
 	then
-		sudo easy_install2 pip;
 		sudo easy_install pip;
+		sudo easy_install3 pip;
 		sudo ln -sv /usr/local/bin/pip3.4 /usr/local/bin/pip;
 		sudo ln -sv /usr/local/bin/pip2.7 /usr/local/bin/pip2;
 	fi
-
+	
 	$osinstaller gettext 1>/dev/null;
 
 	supervisord -v 1>/dev/null 2>/dev/null;
@@ -133,7 +133,7 @@ then
 		wget http://projects.unbit.it/downloads/uwsgi-2.0.10.tar.gz;
 		tar xvf uwsgi-2.0.10.tar.gz;
 		cd uwsgi-2.0.10/
-		python CC=gcc ./uwsgiconfig.py --build;
+		python3 CC=gcc ./uwsgiconfig.py --build;
 		sudo CC=gcc make && make install;
 		sudo cp -rf ./uwsgi /usr/local/bin;
 		cd ../;
@@ -152,13 +152,13 @@ then
 	sudo pip3 install pillow 1>/dev/null;
 
 	sudo mysql.server start;
-	python -c "import MySQLdb" 2>/dev/null 1>/dev/null;
+	python3 -c "import MySQLdb" 2>/dev/null 1>/dev/null;
 	if [ $? -ne 0 ];
 	then
 		sudo easy_install-3.4 $dirPath/packages/MySQL-for-Python-3.zip;
 	fi
 
-	python -c "import pyDes" 2>/dev/null 1>/dev/null;
+	python3 -c "import pyDes" 2>/dev/null 1>/dev/null;
 	if [ $? -ne 0 ];
 		then
 			wget http://twhiteman.netfirms.com/pyDES/pyDes-2.0.1.zip -P $dirPath;
