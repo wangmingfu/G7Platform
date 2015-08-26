@@ -1,0 +1,22 @@
+2015-08-26 18:32:04,244 CRIT Supervisor running as root (no user in config file)
+2015-08-26 18:32:04,247 INFO daemonizing the supervisord process
+2015-08-26 18:32:04,248 INFO supervisord started with pid 19386
+2015-08-26 18:32:05,252 INFO spawned: 'tornado-8894' with pid 19408
+2015-08-26 18:32:05,254 INFO spawned: 'tornado-8893' with pid 19409
+2015-08-26 18:32:05,257 INFO spawned: 'tornado-8892' with pid 19410
+2015-08-26 18:32:05,259 INFO spawned: 'tornado-8891' with pid 19411
+2015-08-26 18:32:06,262 INFO success: tornado-8894 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:06,262 INFO success: tornado-8893 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:06,262 INFO success: tornado-8892 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:06,262 INFO success: tornado-8891 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:46,541 CRIT Supervisor running as root (no user in config file)
+2015-08-26 18:32:46,544 INFO daemonizing the supervisord process
+2015-08-26 18:32:46,545 INFO supervisord started with pid 19579
+2015-08-26 18:32:47,548 INFO spawned: 'tornado-8894' with pid 19601
+2015-08-26 18:32:47,550 INFO spawned: 'tornado-8893' with pid 19602
+2015-08-26 18:32:47,553 INFO spawned: 'tornado-8892' with pid 19603
+2015-08-26 18:32:47,555 INFO spawned: 'tornado-8891' with pid 19604
+2015-08-26 18:32:48,556 INFO success: tornado-8894 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:48,557 INFO success: tornado-8893 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:48,557 INFO success: tornado-8892 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-26 18:32:48,557 INFO success: tornado-8891 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
