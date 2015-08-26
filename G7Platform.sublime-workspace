@@ -79,6 +79,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 3046,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -112,14 +120,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform",
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform",
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/test",
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform/workspace",
-		"/Users/yuyang/workspace/git/G7Platform/G7Platform/workspace/shell"
+		"/Users/yuyang/workspace/git/G7Platform"
 	],
 	"file_history":
 	[
+		"/Users/yuyang/workspace/git/G7Platform/README.md",
+		"/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin/Application/models.py",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/main/BMPlatform/bmplatform.sublime-workspace",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/main/BMPlatform/bmplatform.sublime-project",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/main/G7Platform/G7Platform/main/g7admin/g7admin/settings.py",
@@ -138,7 +144,6 @@
 		"/Users/yuyang/workspace/git/G7Platform/workspace/log/G7Platform.log",
 		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/log/error.log",
 		"/Users/yuyang/workspace/git/G7Platform/workspace/profile/nginx/log/access.log",
-		"/Users/yuyang/workspace/git/G7Platform/README.md",
 		"/Users/yuyang/workspace/git/G7Platform/G7Platform/core/database/G7DBManagers.py",
 		"/Users/yuyang/workspace/git/G7Platform/G7Platform/main/site/Common/G7WebReqHandlers.py",
 		"/Users/yuyang/workspace/git/G7Platform/workspace/shell/G7PlatformRestart.command",
@@ -246,8 +251,7 @@
 		"/Users/yuyang/bmtest/bmtest/settings.py",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/BMPlatform/workspace/shell/tools/djangoinitial.py",
 		"/Users/yuyang/workspace/project/DOne/code/Web/trunk/web/DOne/DOne/profile/D1Profile.py",
-		"/Users/yuyang/百度云同步盘/项目/BiteMage/Code/BiteMage/Commit/models.py",
-		"/Users/yuyang/百度云同步盘/项目/BiteMage/Code/BiteMage/Common/models.py"
+		"/Users/yuyang/百度云同步盘/项目/BiteMage/Code/BiteMage/Commit/models.py"
 	],
 	"find":
 	{
@@ -267,6 +271,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"build_version",
 			"BMPlatform",
 			"G7ResultManager",
 			"options.dbhost\noptions.dbhost",
@@ -351,8 +356,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -392,7 +426,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "g7platform.sublime-project",
+	"project": "G7Platform.sublime-project",
 	"replace":
 	{
 		"height": 42.0
