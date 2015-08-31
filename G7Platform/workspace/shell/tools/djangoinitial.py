@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 __author__ = 'yuyang'
-
 from G7Platform.G7Globals import *
 djangoload()
 from G7Platform.profile.G7Services import *
@@ -37,7 +36,7 @@ def get_secret_key():
             f.write(new_settingsStr)
         os.system("sudo rm -rf {curdir}/{django_project_name}".format(curdir=curdir,django_project_name=django_project_name))
     else:
-        print("当前目录{curdir}已存在{django_project_name}或者当前计算机未安装Django".format(curdir=curdir,django_project_name=django_project_name))
+        print("目录{curdir}已存在{django_project_name}或者当前计算机未安装Django".format(curdir=curdir,django_project_name=django_project_name))
 
 
 def create_superuser():

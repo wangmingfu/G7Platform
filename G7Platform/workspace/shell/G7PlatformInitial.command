@@ -6,47 +6,10 @@ echo "输入软件安装命令如apt-get install,brew install, pacman -s,yum等.
 read osinstaller;
 sysOS=`uname -s`;
 pythonurl="https://www.python.org/ftp/python/3.4.3/python-3.4.3-macosx10.6.pkg";
+sudo chown -R mysql:mysql /usr/local/*/mysql/;
+sudo chmod -R 755 /usr/local/*/mysql/;
 
-function pythoninitial() {
-	wget $pythonurl -P $dirPath;
-	if [ $sysOS == "Darwin" ]
-	then
-		echo "输入用户$USER密码:\n";
-		echo dirPath:$dirPath;
-		sudo installer -pkg $dirPath/python-3.4.3-macosx10.6.pkg -target /;
-
-	else
-		tar xvf $dirPath/Python-3.4.3.tgz;
-		cd $dirPath/Python-3.4.3/;
-		echo "输入root用户密码：";
-		su;
-		./configure --prefix /usr/local/bin/;
-		make && make install;
-	fi
-
-	cd $dirPath;
-	sudo rm -rf $dirPath/*ython-3.4.3*;
-
-	reallink=/usr/local/bin/python3.4;
-	if [ -L /usr/local/bin/python3.4 ]
-	then
-		reallink=$(readlink /usr/local/bin/python3.4);
-	fi
-
-	# sudo rm -rf /usr/local/bin/python;
-	# sudo rm -rf /usr/bin/python;
-	# sudo ln -sv $reallink /usr/local/bin/python;
-	# sudo ln -sv $reallink /usr/bin/python;
-	sudo ln -sv $reallink /usr/local/bin/python3;
-	sudo ln -sv $reallink /usr/bin/python3;
-	# if 	[ -f /usr/bin/python2.7 ]
-	# then
-	# 	sudo ln -sv /usr/bin/python2.7 /usr/local/bin/python2;
-	# fi
-	# sudo rm -rf /usr/bin/easy_install;
-	sudo ln -sv /usr/local/bin/easy_install-3.4 /usr/bin/easy_install3;
-	# sudo ln -sv /usr/local/bin/easy_install-2.7 /usr/bin/easy_install2;
-}
+sh $dirPath/G7PlatformStop.command;
 
 if [ $debug -ne 0 ]
 then
@@ -59,7 +22,7 @@ then
 		brew -v 1>/dev/null 2>/dev/null;
 		if [ $? -ne 0 ]
 		then
-			ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+			sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 		fi
 	else
 		pythonurl="https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz";
@@ -71,6 +34,46 @@ then
 		$osinstaller wget;
 	fi
 
+	function pythoninitial() {
+		wget $pythonurl -P $dirPath;
+		if [ $sysOS == "Darwin" ]
+		then
+			echo "输入用户$USER密码:\n";
+			echo dirPath:$dirPath;
+			sudo installer -pkg $dirPath/python-3.4.3-macosx10.6.pkg -target /;
+
+		else
+			tar xvf $dirPath/Python-3.4.3.tgz;
+			cd $dirPath/Python-3.4.3/;
+			echo "输入root用户密码：";
+			su;
+			./configure --prefix /usr/local/bin/;
+			make && make install;
+		fi
+
+		cd $dirPath;
+		sudo rm -rf $dirPath/*ython-3.4.3*;
+
+		reallink=/usr/local/bin/python3.4;
+		if [ -L /usr/local/bin/python3.4 ]
+		then
+			reallink=$(readlink /usr/local/bin/python3.4);
+		fi
+
+		# sudo rm -rf /usr/local/bin/python;
+		# sudo rm -rf /usr/bin/python;
+		# sudo ln -sv $reallink /usr/local/bin/python;
+		# sudo ln -sv $reallink /usr/bin/python;
+		sudo ln -sv $reallink /usr/local/bin/python3;
+		sudo ln -sv $reallink /usr/bin/python3;
+		# if 	[ -f /usr/bin/python2.7 ]
+		# then
+		# 	sudo ln -sv /usr/bin/python2.7 /usr/local/bin/python2;
+		# fi
+		# sudo rm -rf /usr/bin/easy_install;
+		sudo ln -sv /usr/local/bin/easy_install-3.4 /usr/bin/easy_install3;
+		# sudo ln -sv /usr/local/bin/easy_install-2.7 /usr/bin/easy_install2;
+	}
 	defaultPyVersion=`python3 -V 2>&1|awk '{print $2}'|awk -F '.' '{print $1}'` 1>/dev/null 2>/dev/null;
 	if [[ $defaultPyVersion != *[^0-9]* ]]&&[[ $defaultPyVersion != 0* ]]; then
 		if [ $defaultPyVersion -ne 3 ]; then
@@ -84,7 +87,14 @@ then
 	if [ $? -ne 0 ]
 	then
 		$osinstaller mysql;
-		sudo chown -R mysql /usr/local/var/mysql;
+		# sudo chown -R mysql /usr/local/var/mysql;
+		# sudo chmod -R u+r /usr/local//var/mysql/;
+		# sudo chmod -R u+w /usr/local//var/mysql/;
+		# sudo chmod -R u+x /usr/local//var/mysql/;
+		unset TMPDIR;
+		mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp;
+		mysql.server start;
+		/usr/local/Cellar/mysql/*/bin/mysql_secure_installation;
 	fi
 	
 	nginx -v 2>/dev/null 1>/dev/null;
@@ -146,7 +156,7 @@ then
 	django-admin 2>/dev/null 1>/dev/null;
 	if [ $? -ne 0 ];
 	then
-		cp /usr/local/lib/python3.4/site-packages/django/bin/django-admin.py /usr/local/bin/django-admin;
+		sudo sed -e 's/python/python3/' /Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/django/bin/django-admin.py > /usr/local/bin/django-admin;
 	fi
 	sudo pip3 install torndb==0.3 1>/dev/null;
 	sudo pip3 install pillow 1>/dev/null;
@@ -169,7 +179,8 @@ then
 			sudo rm -rf ./pyDes*;
 	fi
 
-	export PYTHONPATH=$PYTHONPATH:$(cd $dirPath/../../..; pwd)/G7Platform;python3 $dirPath/tools/djangoinitial.py;
+	export PYTHONPATH=$(cd $dirPath/../../..; pwd)/G7Platform;python3 $dirPath/tools/djangoinitial.py;
+
 else
 	export PYTHONPATH=$(cd $dirPath/../../..; pwd)/G7Platform;python3 $dirPath/tools/djangoinitial.py;
 fi;
