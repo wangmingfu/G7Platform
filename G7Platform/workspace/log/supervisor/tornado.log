@@ -140,3 +140,27 @@
 2015-09-01 10:46:03,338 INFO success: tornado-8893 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2015-09-01 10:46:03,338 INFO success: tornado-8892 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2015-09-01 10:46:03,339 INFO success: tornado-8891 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 11:46:47,082 CRIT Supervisor running as root (no user in config file)
+2015-09-01 11:46:47,082 INFO Increased RLIMIT_NOFILE limit to 1024
+2015-09-01 11:46:47,086 INFO daemonizing the supervisord process
+2015-09-01 11:46:47,087 INFO supervisord started with pid 37645
+2015-09-01 11:46:48,092 INFO spawned: 'tornado-8894' with pid 37667
+2015-09-01 11:46:48,095 INFO spawned: 'tornado-8893' with pid 37668
+2015-09-01 11:46:48,098 INFO spawned: 'tornado-8892' with pid 37669
+2015-09-01 11:46:48,102 INFO spawned: 'tornado-8891' with pid 37670
+2015-09-01 11:46:49,105 INFO success: tornado-8894 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 11:46:49,105 INFO success: tornado-8893 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 11:46:49,106 INFO success: tornado-8892 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 11:46:49,106 INFO success: tornado-8891 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 14:46:17,940 CRIT Supervisor running as root (no user in config file)
+2015-09-01 14:46:17,940 INFO Increased RLIMIT_NOFILE limit to 1024
+2015-09-01 14:46:17,944 INFO daemonizing the supervisord process
+2015-09-01 14:46:17,945 INFO supervisord started with pid 40001
+2015-09-01 14:46:18,949 INFO spawned: 'tornado-8894' with pid 40023
+2015-09-01 14:46:18,952 INFO spawned: 'tornado-8893' with pid 40024
+2015-09-01 14:46:18,954 INFO spawned: 'tornado-8892' with pid 40025
+2015-09-01 14:46:18,957 INFO spawned: 'tornado-8891' with pid 40026
+2015-09-01 14:46:19,959 INFO success: tornado-8894 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 14:46:19,960 INFO success: tornado-8893 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 14:46:19,960 INFO success: tornado-8892 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-09-01 14:46:19,960 INFO success: tornado-8891 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

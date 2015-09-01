@@ -1,22 +1,22 @@
 <?xml version="1.0" ?>
 <uwsgi>
-	<enable-threads>true</enable-threads>
-	<memory-report>true</memory-report>
-	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform</pythonpath>
-	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform</pythonpath>
-	<plugin>/usr/lib/uwsgi/py34_plugin.so</plugin>
-	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/</pythonpath>
 	<logdate>true</logdate>
-	<daemonize>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/log/django/django.log</daemonize>
-	<module>wsgi</module>
-	<socket>127.0.0.1:8882</socket>
-	<processes>8</processes>
-	<pidfile>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/profile/nginx/pid/nginx.pid</pidfile>
 	<py-programname>python3</py-programname>
-	<chdir>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin</chdir>
-	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/g7admin/</pythonpath>
-	<limit-as>300</limit-as>
-	<master>true</master>
+	<pidfile>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/profile/nginx/pid/nginx.pid</pidfile>
 	<profiler>true</profiler>
 	<listen>80</listen>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/g7admin/</pythonpath>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform</pythonpath>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform</pythonpath>
+	<chdir>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin</chdir>
+	<plugin>/usr/lib/uwsgi/py34_plugin.so</plugin>
+	<processes>8</processes>
+	<memory-report>true</memory-report>
+	<socket>127.0.0.1:8882</socket>
+	<daemonize>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/log/django/django.log</daemonize>
+	<module>wsgi</module>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/</pythonpath>
+	<master>true</master>
+	<limit-as>300</limit-as>
+	<enable-threads>true</enable-threads>
 </uwsgi>

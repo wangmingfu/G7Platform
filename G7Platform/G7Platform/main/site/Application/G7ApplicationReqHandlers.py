@@ -301,6 +301,7 @@ class G7ApplicationReqHandler(G7APIReqHandler):
 		product_name = self.get_argument('product_name')
 		uid = self.get_argument("uid")
 		installPassword = self.get_argument("installPassword")
+		product_group_id = self.get_argument("product_group_id")
 		pgyer_uKey = ""
 		pgyer_apiKey = ""
 		currentG7User = None

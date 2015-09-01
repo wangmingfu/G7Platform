@@ -36,7 +36,6 @@ class G7GroupForm(forms.ModelForm):
                                                 G7User._meta.get_field('groups').rel,
                                                 admin.site)
             self.fields['members'].queryset = G7User.objects.all()
-        G7Profile().log("initial:{instance},*args:{args},kwargs:{kwargs}".format(instance=self._meta.model,args=args,kwargs=kwargs))
 
     def save(self, commit=True):
         instance = super(G7GroupForm, self).save(commit=commit)
@@ -48,7 +47,6 @@ class G7GroupForm(forms.ModelForm):
                 if member not in instance.members.all():
                     instance.members.add(member)
             '''{'members': [<G7User: 1.root>], 'creator': <G7User: 1.root>, 'permissions': [], 'name': 'asdfasdfasdfasdf'}'''
-            # G7Profile().log("saveInstance is:{instance}".format(instance=instance))
         else:
             self.instance.creator = self.cleaned_data["creator"]
             self.instance.name = self.cleaned_data["name"]
@@ -58,10 +56,8 @@ class G7GroupForm(forms.ModelForm):
             for permission in self.cleaned_data["permissions"]:
                 self.instance.permissions.add(permission)
         if commit:
-            G7Profile().log("commited")
             instance.save()
 
-        # G7Profile().log("saveInstance:{instance},members:{cleaned_data},ins_members_all:{members_all}".format(instance=instance,cleaned_data=self.cleaned_data,members_all=instance.members.all()))
         return instance
 
 
@@ -89,7 +85,6 @@ class G7GroupAdmin(admin.ModelAdmin):
 
 
     def formfield_for_manytomany(self, db_field, request=None, **kwargs):
-        G7Profile().log("db_field:{db_field}".format(db_field=db_field))
         if db_field.name == 'permissions':
             qs = kwargs.get('queryset', db_field.rel.to.objects)
             # Avoid a major performance hit resolving permission names which
