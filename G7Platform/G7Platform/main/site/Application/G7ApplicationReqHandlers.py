@@ -454,13 +454,15 @@ class G7ApplicationReqHandler(G7APIReqHandler):
 			uploader.product_name = appName
 			uploader.currentG7User = currentG7User
 
-			users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())
-			g7log([user.email for user in users if user.email != currentG7User.email])
+			if type(product_group_id) == type(0) and product_group_id > 0:
+				users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())+[user for user in G7User.objects.all() if len([group for group in list(user.groups.all()) if group.id == int(product_group_id)])>0]
+			else:
+				users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())
+
 			emails = [user.email for user in users]
 			uploader.mail_receiver = list({}.fromkeys(emails).keys())
 			uploader.build_version = buildVersion
 			uploader.project_version = appVersion
-			# g7log("buildVersion:"+buildVersion+"appVersion:"+appVersion)
 
 			return self.write(uploader.uploadToPgyer())
 		except:

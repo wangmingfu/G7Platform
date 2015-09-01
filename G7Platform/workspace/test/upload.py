@@ -42,16 +42,21 @@ if __name__ == "__main__":
     if len(sys.argv) >= 6:
         #项目名称，用在 拼接 tomcat 文件地址
         project_name = str(sys.argv[1])
+        
         #产品名称
         product_name = str(sys.argv[2])
+
         #项目构建版本
         project_version = str(sys.argv[3])
+
         #获取ipa地址
         ipa_file_path = str(sys.argv[4])
+
         #构建版本号
         build_version = str(sys.argv[5])
-        #邮件接受者
-        mail_receiver_type = int(sys.argv[6])
+
+        #产品组ID
+        product_group_id = int(sys.argv[6])
 
         # ipa_file_path = "test/AppMarket_v1.0_build15080315305318.ipa"
         params = {
@@ -59,6 +64,7 @@ if __name__ == "__main__":
             "product_name":product_name,
             "uid":"8a0a7d4a81cb46f8b70abe9c000b975d",
             "installPassword":"abc",
+            "product_group_id":product_group_id,
         }
 
         coded_params, boundary = _encode_multipart(params)
