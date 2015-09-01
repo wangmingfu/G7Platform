@@ -165,7 +165,7 @@ class G7UserAdmin(UserAdmin):
 
     fieldsets = (
         (None, {'fields': ('username', 'password',"description")}),
-        ('用户资料', {'fields': ("job",'sex','thumb','age','userid','usignature','nickname','clientid','realname',"mobile")}),
+        ('用户资料', {'fields': ("job",'sex','thumb','age','userid','nickname','realname',"mobile")}),
         ('小组', {'fields': ('groups',)}),
         ("邮件设置", {"fields": ( "email", "mail_pwd",)}),
         ("蒲公英", {"fields": ("pgyer_ukey", "pgyer_apiKey")}),
@@ -179,6 +179,8 @@ class G7UserAdmin(UserAdmin):
             'fields': ('username', 'email', 'password1', 'password2')}
         ),
     )
+
+    readonly_fields = ("userid",)
 
     def to_field_allowed(self, request, to_field):
         rv = super(G7UserAdmin, self).to_field_allowed(request, to_field)

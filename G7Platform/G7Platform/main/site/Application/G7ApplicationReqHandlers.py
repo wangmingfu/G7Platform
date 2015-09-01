@@ -301,7 +301,7 @@ class G7ApplicationReqHandler(G7APIReqHandler):
 		product_name = self.get_argument('product_name')
 		uid = self.get_argument("uid")
 		installPassword = self.get_argument("installPassword")
-		product_group_id = self.get_argument("product_group_id")
+		product_group_id = int(self.get_argument("product_group_id"))
 		pgyer_uKey = ""
 		pgyer_apiKey = ""
 		currentG7User = None
@@ -447,17 +447,19 @@ class G7ApplicationReqHandler(G7APIReqHandler):
 
 			uploader.domain = 'www.pgyer.com'
 			uploader.urlPath = "/apiv1/app/upload"
-			uploader.uKey = pgyer_uKey #"3a365c881939e68dc9dc4a457a90a38e"
-			uploader.api_key = pgyer_apiKey #"08af7b752e5c53b6b5dbcc6b66f90e78"
+			uploader.uKey = pgyer_uKey 
+			uploader.api_key = pgyer_apiKey 
 			uploader.ipaFile = open(application.file.path, "rb")
 			uploader.installPassword = installPassword
 			uploader.product_name = appName
 			uploader.currentG7User = currentG7User
 
-			if type(product_group_id) == type(0) and product_group_id > 0:
-				users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())+[user for user in G7User.objects.all() if len([group for group in list(user.groups.all()) if group.id == int(product_group_id)])>0]
-			else:
-				users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())
+			users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())
+			
+			try:
+				if type(int(product_group_id)) == type(0) and int(product_group_id) > 0:
+					users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())+[user for user in G7User.objects.all() if len([group for group in list(user.groups.all()) if group.id == int(product_group_id)])>0]
+
 
 			emails = [user.email for user in users]
 			uploader.mail_receiver = list({}.fromkeys(emails).keys())

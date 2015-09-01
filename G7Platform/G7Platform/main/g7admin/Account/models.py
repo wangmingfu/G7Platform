@@ -39,7 +39,7 @@ class G7Group(models.Model):
                                 related_name="g7group1_set",
                                 related_query_name="g7group1",
                                 db_constraint=False)
-    name = models.CharField(_('name'), max_length=80, unique=True)
+    name = models.CharField(verbose_name=_('群组名'), max_length=80, unique=True)
     permissions = models.ManyToManyField(Permission,
         verbose_name=_('permissions'), blank=True)
     objects = GroupManager()
@@ -85,7 +85,7 @@ class G7User(AbstractBaseUser):
     age = models.IntegerField(verbose_name=_(u"年龄") ,default=0)
     expires_time = models.DateTimeField(verbose_name=_(u"登陆过期时间"),auto_now_add=True, blank=True, null=True)
     usignature = models.CharField(verbose_name=_(u"用户登陆标识"),max_length=100, default=uuid.uuid4().hex, blank=True)
-    nickname = models.CharField(verbose_name=_(u"昵称"),max_length=255, default=uuid.uuid4().hex, blank=True)
+    nickname = models.CharField(verbose_name=_(u"昵称"),max_length=255, default="", blank=True)
     clientid = models.CharField(verbose_name=_(u"客户端id"),max_length=100,default=uuid.uuid4().hex, blank=True)
     realname = models.CharField(verbose_name=_(u"真实姓名"),max_length=255, default="", blank=True, null=True)
     job = models.CharField(verbose_name=_(u"职业"), max_length=100, default="无业游民")
