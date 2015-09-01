@@ -7,6 +7,8 @@ sysOS=`uname -s`;
 sudo chmod a+w /usr/local/Cellar;
 sudo chmod -R g+w /Library/Caches/Homebrew;
 sudo chown -R $USER /usr/local;
+sudo chown -R mysql:mysql /usr/local/opt/mysql/;
+sudo chmod -R 755 /usr/local/opt/mysql/;
 
 sh $dirPath/G7PlatformStop.command;
 

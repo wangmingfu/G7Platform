@@ -1,21 +1,22 @@
 <?xml version="1.0" ?>
 <uwsgi>
-	<pythonpath>/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin/</pythonpath>
-	<listen>80</listen>
-	<memory-report>true</memory-report>
-	<logdate>true</logdate>
-	<profiler>true</profiler>
-	<pythonpath>/Users/yuyang/workspace/git/G7Platform/G7Platform</pythonpath>
 	<enable-threads>true</enable-threads>
-	<pythonpath>/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform</pythonpath>
+	<memory-report>true</memory-report>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform</pythonpath>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform</pythonpath>
+	<plugin>/usr/lib/uwsgi/py34_plugin.so</plugin>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/</pythonpath>
+	<logdate>true</logdate>
+	<daemonize>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/log/django/django.log</daemonize>
 	<module>wsgi</module>
-	<daemonize>/Users/yuyang/workspace/git/G7Platform/G7Platform/workspace/log/django/django.log</daemonize>
-	<master>true</master>
-	<chdir>/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin</chdir>
-	<limit-as>300</limit-as>
-	<py-programname>python3</py-programname>
-	<pythonpath>/Users/yuyang/workspace/git/G7Platform/G7Platform/G7Platform/main/g7admin/g7admin/</pythonpath>
-	<processes>8</processes>
 	<socket>127.0.0.1:8882</socket>
-	<pidfile>/Users/yuyang/workspace/git/G7Platform/G7Platform/workspace/profile/nginx/pid/nginx.pid</pidfile>
+	<processes>8</processes>
+	<pidfile>/Users/jenkins/workspace/G7Platform/G7Platform/workspace/profile/nginx/pid/nginx.pid</pidfile>
+	<py-programname>python3</py-programname>
+	<chdir>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin</chdir>
+	<pythonpath>/Users/jenkins/workspace/G7Platform/G7Platform/G7Platform/main/g7admin/g7admin/</pythonpath>
+	<limit-as>300</limit-as>
+	<master>true</master>
+	<profiler>true</profiler>
+	<listen>80</listen>
 </uwsgi>

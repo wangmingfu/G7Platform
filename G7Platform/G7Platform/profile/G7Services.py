@@ -121,6 +121,7 @@ class G7ReleaseServer(G7Server):
                 "master":"true",
                 "pidfile":pidfile,
                 "processes":"8",
+		"plugin":"/usr/lib/uwsgi/py34_plugin.so",
                 "pythonpath1":pythonpath1,
                 "pythonpath2":pythonpath2,
                 "pythonpath3":pythonpath3,

@@ -6,8 +6,32 @@ echo "输入软件安装命令如apt-get install,brew install, pacman -s,yum等.
 read osinstaller;
 sysOS=`uname -s`;
 pythonurl="https://www.python.org/ftp/python/3.4.3/python-3.4.3-macosx10.6.pkg";
-sudo chown -R mysql:mysql /usr/local/*/mysql/;
-sudo chmod -R 755 /usr/local/*/mysql/;
+if [ -d "/usr/local/Cellar" ]
+then
+	sudo chmod a+w /usr/local/Cellar;
+fi
+
+if [ -d "/Library/Caches/Homebrew" ]
+then
+	sudo chmod -R g+w /Library/Caches/Homebrew;
+fi
+
+if [ -d "/usr/local/var/mysql" ]
+then
+
+if [ -d "/usr/local/var/mysql/" ]
+then
+sudo chown -R mysql:mysql /usr/local/var/mysql/;
+sudo chmod -R 755 /usr/local/var/mysql/;
+fi
+
+if [ -d "/usr/local/opt/mysql" ]
+then
+
+sudo chown -R mysql:mysql /usr/local/opt/mysql/;
+sudo chmod -R 755 /usr/local/opt/mysql/;
+
+fi
 
 sh $dirPath/G7PlatformStop.command;
 
@@ -41,7 +65,6 @@ then
 			echo "输入用户$USER密码:\n";
 			echo dirPath:$dirPath;
 			sudo installer -pkg $dirPath/python-3.4.3-macosx10.6.pkg -target /;
-
 		else
 			tar xvf $dirPath/Python-3.4.3.tgz;
 			cd $dirPath/Python-3.4.3/;
@@ -74,7 +97,8 @@ then
 		sudo ln -sv /usr/local/bin/easy_install-3.4 /usr/bin/easy_install3;
 		# sudo ln -sv /usr/local/bin/easy_install-2.7 /usr/bin/easy_install2;
 	}
-	defaultPyVersion=`python3 -V 2>&1|awk '{print $2}'|awk -F '.' '{print $1}'` 1>/dev/null 2>/dev/null;
+
+	defaultPyVersion=`python -V 2>&1|awk '{print $2}'|awk -F '.' '{print $1}'` 1>/dev/null 2>/dev/null;
 	if [[ $defaultPyVersion != *[^0-9]* ]]&&[[ $defaultPyVersion != 0* ]]; then
 		if [ $defaultPyVersion -ne 3 ]; then
 			pythoninitial;
@@ -86,14 +110,19 @@ then
 	mysql --help 2>/dev/null 1>/dev/null;
 	if [ $? -ne 0 ]
 	then
+		echo "开始安装mysql";
 		$osinstaller mysql;
 		# sudo chown -R mysql /usr/local/var/mysql;
 		# sudo chmod -R u+r /usr/local//var/mysql/;
 		# sudo chmod -R u+w /usr/local//var/mysql/;
 		# sudo chmod -R u+x /usr/local//var/mysql/;
+		sudo chown -R mysql:mysql /usr/local/*/mysql/;
+		sudo chmod -R 755 /usr/local/*/mysql/;
 		unset TMPDIR;
 		mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp;
+		echo "启动myqsl";	
 		mysql.server start;
+		
 		/usr/local/Cellar/mysql/*/bin/mysql_secure_installation;
 	fi
 	
@@ -119,7 +148,7 @@ then
 
 	sudo cp $dirPath/../profile/php/php-fpm.conf /etc/php-fpm.conf;
 
-	pip -V 1>/dev/null 2>/dev/null;
+	pip3 -V 1>/dev/null 2>/dev/null;
 	if [ $? -ne 0 ]
 	then
 		sudo easy_install pip;
@@ -144,7 +173,9 @@ then
 		tar xvf uwsgi-2.0.10.tar.gz;
 		cd uwsgi-2.0.10/
 		python3 CC=gcc ./uwsgiconfig.py --build;
-		sudo CC=gcc make && make install;
+		sudo CC=gcc python3 uwsgiconfig.py --plugin plugins/python core py34;
+		sudo mkdir /usr/lib/uwsgi;
+		sudo cp -rf ./py34_plugin.so /usr/lib/uwsgi;
 		sudo cp -rf ./uwsgi /usr/local/bin;
 		cd ../;
 		sudo rm -rf uwsgi-2.0.10*;
