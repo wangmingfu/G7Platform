@@ -459,8 +459,9 @@ class G7ApplicationReqHandler(G7APIReqHandler):
 			try:
 				if type(int(product_group_id)) == type(0) and int(product_group_id) > 0:
 					users = list(G7User.objects.filter(email_vip=True))+list(project.members.all())+[user for user in G7User.objects.all() if len([group for group in list(user.groups.all()) if group.id == int(product_group_id)])>0]
-
-
+			except:
+				pass
+				
 			emails = [user.email for user in users]
 			uploader.mail_receiver = list({}.fromkeys(emails).keys())
 			uploader.build_version = buildVersion
