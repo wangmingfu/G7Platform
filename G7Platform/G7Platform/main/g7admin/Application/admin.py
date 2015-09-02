@@ -18,8 +18,6 @@ class G7ProjectForm(forms.ModelForm):
         # G7Profile().log("initial:{instance},*args:{args},kwargs:{kwargs}".format(instance=self.instance,args=args,kwargs=kwargs))
         self.instance.identifier = str(uuid.uuid3(uuid.uuid4(),str(time.time())).hex)
 
-
-
 class G7ProjectAdmin(admin.ModelAdmin):
 
     list_display = ('icon_preview','id','name','modified_at', 'create_at',)
